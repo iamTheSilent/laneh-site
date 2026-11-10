@@ -1,29 +1,16 @@
 <!doctype html>
 <html lang="fa" dir="rtl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>برنامه‌ریز روز و تیم | لانه</title>
 <meta name="description" content="لانه؛ برنامه‌ریز روز و تیم.">
 <meta name="theme-color" content="#262936">
-<meta property="og:title" content="برنامه‌ریز روز و تیم | لانه">
-<meta property="og:description" content="لانه؛ برنامه‌ریز روز و تیم.">
+<meta property="og:title" content="لانه"><meta property="og:description" content="لانه؛ برنامه‌ریز روز و تیم.">
 <link rel="icon" href="assets/icon.png"><meta property="og:image" content="assets/icon.png">
-<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('m');if(/[?&]font=vazir/.test(location.search))document.documentElement.classList.add('f-vazir')</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('m')</script>
+<link rel="preload" href="assets/fonts/pofak-900.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="assets/style.css">
-<style>
-:root {
-  --primary: #E6A06F;
-  --bg-color: #262936;
-  --fg-color: #F5EEE5;
-}
-</style>
-</head>
-<body>
-<div class="loader" id="brand-loader"><!-- Laneh hatching intro (same shapes and timing as the app's intro). Inlined into the loader; defines window.introDone. -->
+</head><body>
+<div class="loader"><!-- Laneh hatching intro (same shapes and timing as the app's intro). Inlined into the loader; defines window.introDone. -->
 <style>
   .intro-stage{width:min(70vmin,360px);aspect-ratio:1}
   .intro-stage svg{width:100%;height:100%;overflow:visible}
@@ -84,465 +71,116 @@ window.introDone = !document.documentElement.classList.contains('m') ? Promise.r
 });
 </script>
 </div>
-<div class="scroll-progress" aria-hidden="true"></div>
-
-<header class="nav" id="main-nav">
-  <div class="nav-in">
-    <a class="brand" href="index.html">
-      <img src="assets/icon.png" alt="" width="36" height="36">
-      <span>لانه</span>
-      <span class="live-dot" title="نسخهٔ ۱.۲.۰"></span>
-    </a>
-    <nav class="nav-links" aria-label="منوی اصلی">
-      <a href="index.html#team" class="nav-link">لانهٔ تیم</a><a href="index.html#claude" class="nav-link">Claude</a><a href="index.html#download" class="nav-link">دانلود</a><a href="changelog.html" class="nav-link">تازه‌ها</a>
-    </nav>
-    <div class="nav-actions">
-      <a class="btn primary sm magnetic nav-dl" href="index.html#download"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>دانلود</span></a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="باز کردن منو" aria-expanded="false">
-        <span class="toggle-icon-menu"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></span>
-        <span class="toggle-icon-close"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
-      </button>
+<header class="bar"><div class="container bar-in">
+  <a class="wordmark" href="index.html"><img src="assets/icon.png" alt="" width="36" height="36">لانه</a>
+  <nav aria-label="لانه"><a href="index.html#team">لانهٔ تیم</a><a href="index.html#claude">Claude</a><a href="index.html#download">دانلود</a><a href="changelog.html">تازه‌ها</a></nav>
+  <a class="btn btn--small" href="index.html#download"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>دانلود</span></a>
+</div></header>
+<main>
+<section class="hero" aria-labelledby="hero-h">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1 id="hero-h">لانه<span class="h1-sub">برنامه‌ریز روز و تیم</span></h1>
+      <p class="lead">تمام چیزی که برای شروع یک ایده یا کار بخوای</p>
+      <div class="actions"><a class="btn btn--primary" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5l7.5-1v7H3zM12 4.3l9-1.3v8.5h-9zM3 12.5h7.5v7l-7.5-1zM12 12.5h9V21l-9-1.3z" fill="currentColor" stroke="none"/></svg><span>ویندوز (نصب‌کننده)</span></a><a class="btn btn--quiet" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10v7a1 1 0 0 0 1 1h1v3M18 10v7a1 1 0 0 1-1 1h-1v3M6 10a6 6 0 0 1 12 0zM3 11v5M21 11v5M8 4l1.5 2M16 4l-1.5 2"/></svg><span>اندروید (APK)</span></a><a class="btn btn--quiet" href="https://cafebazaar.ir/app/app.laneh" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>کافه‌بازار</span></a><a class="btn btn--quiet" href="https://37-32-38-170.sslip.io/app/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span>وب (بدون نصب، توی مرورگر)</span></a></div>
+      <p class="hero-note"><a href="changelog.html">تازه‌ها</a> <span class="num">۱.۲.۰</span></p>
     </div>
-  </div>
-  <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
-    <div class="drawer-in">
-      <div class="drawer-links">
-        <a href="index.html#team" class="drawer-link">لانهٔ تیم</a><a href="index.html#claude" class="drawer-link">Claude</a><a href="index.html#download" class="drawer-link">دانلود</a><a href="changelog.html" class="drawer-link">تازه‌ها</a>
-      </div>
-      <a class="btn primary drawer-cta" href="index.html#download"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>دانلود</span></a>
-    </div>
-  </div>
-</header>
-<div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
-
-<main id="top">
-<section class="hero" >
-  <div class="hero-header">
-    <div class="hero-bg" aria-hidden="true">
-      <div class="hero-glow"></div>
-      <canvas class="hero-embers" aria-hidden="true"></canvas>
-      <svg class="hero-logo" viewBox="120 120 780 740">
-        <path fill="#D5A18F" d="M168 569 C244 663 371 756 510 756 C648 756 783 668 856 569 C832 681 688 826 510 826 C333 826 191 687 168 569 Z"/>
-        <g class="hl-bird">
-          <path class="hl-wing" fill="#E6A06F" d="M341 159 C382 244 490 289 553 346 C577 368 585 409 571 449 C555 490 506 524 471 556 L432 572 L425 557 L477 513 C441 527 389 514 352 477 C318 444 302 413 295 366 C347 414 402 429 451 432 C361 391 309 291 341 159 Z"/>
-          <path fill="#E6A06F" d="M554 344 C577 296 611 279 649 281 C680 284 698 307 712 308 L754 306 L713 342 C692 357 682 380 678 413 C671 479 639 524 567 591 L513 552 C547 521 576 484 585 453 C591 418 577 377 554 344 Z"/>
-          <path fill="#262936" d="M557 349 C576 375 585 407 580 435 C574 467 558 486 532 512 C563 469 577 420 557 349 Z"/>
-          <circle cx="667" cy="327" r="14" fill="#262936"/>
-        </g>
-        <path fill="#F5EEE5" d="M351 507 L415 563 L486 538 L575 626 L677 537 C713 644 655 726 519 745 C386 758 296 658 351 507 Z"/>
-      </svg>
-    </div>
-
-    <div class="hero-copy">
-    <a class="badge" data-fade href="changelog.html"><b dir="ltr">۱.۲.۰</b><span>تازه‌ها</span><span class="arr">←</span></a>
-    <div class="hero-eyebrow" data-fade>برنامه‌ریز روز و تیم</div>
-    <h1 class="split-hero"><span class="w"><span>لانه</span></span></h1>
-    <p class="hero-lead" data-fade>تمام چیزی که برای شروع یک ایده یا کار بخوای</p>
-    <div class="ctas" data-fade>
-      <a class="btn primary hero-cta magnetic" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5l7.5-1v7H3zM12 4.3l9-1.3v8.5h-9zM3 12.5h7.5v7l-7.5-1zM12 12.5h9V21l-9-1.3z" fill="currentColor" stroke="none"/></svg><span>ویندوز (نصب‌کننده)</span></a><a class="btn ghost magnetic" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10v7a1 1 0 0 0 1 1h1v3M18 10v7a1 1 0 0 1-1 1h-1v3M6 10a6 6 0 0 1 12 0zM3 11v5M21 11v5M8 4l1.5 2M16 4l-1.5 2"/></svg><span>اندروید (APK)</span></a><a class="btn ghost magnetic" href="https://cafebazaar.ir/app/app.laneh" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>کافه‌بازار</span></a><a class="btn ghost magnetic" href="https://37-32-38-170.sslip.io/app/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span>وب (بدون نصب، توی مرورگر)</span></a>
-    </div>
-    </div>
-  </div>
-
-  <div class="hero-stage">
-    <div class="hero-chassis">
-      <div class="chassis-chrome">
-        <div class="chrome-dots"><i></i><i></i><i></i></div>
-        <div class="chrome-address chrome-empty"></div>
-      </div>
-      <figure class="window">
-        <img src="assets/shots/01-today.png" srcset="assets/shots/01-today-720.webp 720w, assets/shots/01-today-1000.webp 1000w, assets/shots/01-today.png 1424w" sizes="(max-width: 900px) 92vw, 1080px" alt="لانه" width="1424" height="861">
-      </figure>
-    </div>
-    
-      <div class="hero-satellite hero-sat-0">
-        <figure class="phone">
-          <img src="assets/shots/phone-01-today.png" srcset="assets/shots/phone-01-today-260.webp 260w, assets/shots/phone-01-today.png 384w" sizes="(max-width: 900px) 60vw, 260px" alt="لانه" width="384" height="821">
-        </figure>
-      </div>
-    
-      <div class="hero-satellite hero-sat-1">
-        <figure class="phone">
-          <img src="assets/shots/phone-04-projects.png" srcset="assets/shots/phone-04-projects-260.webp 260w, assets/shots/phone-04-projects.png 384w" sizes="(max-width: 900px) 60vw, 260px" alt="لانه" width="384" height="821">
-        </figure>
-      </div>
-    
-  </div>
-
-  <div class="sanctuary-grid">
-    
-      <article class="sanctuary-card" style="--card-accent:#FF9500">
-        <div class="card-head">
-          <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
-          <h3>لانهٔ شخصی</h3>
-        </div>
-        <ul class="card-points">
-          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span><strong class="hl">آفلاین</strong></span></li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>روی دستگاه خودت</span></li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>هیچ‌وقت به سرور <strong class="hl">نمی‌ره</strong></span></li>
-        </ul>
-      </article>
-    
-      <article class="sanctuary-card" style="--card-accent:#8F8CF5">
-        <div class="card-head">
-          <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4a4 4 0 0 1 0 8M22 21a7 7 0 0 0-4-6.3"/></svg></div>
-          <h3>لانهٔ تیم</h3>
-        </div>
-        <ul class="card-points">
-          <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>فضای کار <strong class="hl">مشترک</strong></span></li><li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span>همگام‌سازی <strong class="hl">زنده</strong> بین گوشی و کامپیوتر</span></li>
-        </ul>
-      </article>
-    
+    <div class="hero-mark"><canvas class="embers" aria-hidden="true"></canvas><svg class="mark" viewBox="120 120 780 740" aria-hidden="true">
+  <path class="mark-nest" d="M168 569 C244 663 371 756 510 756 C648 756 783 668 856 569 C832 681 688 826 510 826 C333 826 191 687 168 569 Z"/>
+  <g class="mark-bird">
+    <path class="mark-wing" d="M341 159 C382 244 490 289 553 346 C577 368 585 409 571 449 C555 490 506 524 471 556 L432 572 L425 557 L477 513 C441 527 389 514 352 477 C318 444 302 413 295 366 C347 414 402 429 451 432 C361 391 309 291 341 159 Z"/>
+    <path class="mark-body" d="M554 344 C577 296 611 279 649 281 C680 284 698 307 712 308 L754 306 L713 342 C692 357 682 380 678 413 C671 479 639 524 567 591 L513 552 C547 521 576 484 585 453 C591 418 577 377 554 344 Z"/>
+    <path class="mark-shade" d="M557 349 C576 375 585 407 580 435 C574 467 558 486 532 512 C563 469 577 420 557 349 Z"/>
+    <circle class="mark-shade" cx="667" cy="327" r="14"/>
+  </g>
+  <path class="mark-egg" d="M351 507 L415 563 L486 538 L575 626 L677 537 C713 644 655 726 519 745 C386 758 296 658 351 507 Z"/>
+</svg></div>
   </div>
 </section>
-<section class="band" aria-hidden="true"><div class="band-track"><div class="band-row"><span>مسیر تا هدف</span><i>✦</i><span>نقش‌ها</span><i>✦</i><span>دعوت</span><i>✦</i><span>خبرها</span><i>✦</i><span>Claude</span><i>✦</i><span>همگام‌سازی زنده</span><i>✦</i><span>مسیر تا هدف</span><i>✦</i><span>نقش‌ها</span><i>✦</i><span>دعوت</span><i>✦</i><span>خبرها</span><i>✦</i><span>Claude</span><i>✦</i><span>همگام‌سازی زنده</span><i>✦</i></div><div class="band-row alt"><span>مسیر تا هدف</span><i>✦</i><span>نقش‌ها</span><i>✦</i><span>دعوت</span><i>✦</i><span>خبرها</span><i>✦</i><span>Claude</span><i>✦</i><span>همگام‌سازی زنده</span><i>✦</i><span>مسیر تا هدف</span><i>✦</i><span>نقش‌ها</span><i>✦</i><span>دعوت</span><i>✦</i><span>خبرها</span><i>✦</i><span>Claude</span><i>✦</i><span>همگام‌سازی زنده</span><i>✦</i></div></div></section>
-<section id="team" class="block block-story">
-  <div class="head"><h2 class="split"><span class="w"><span>لانهٔ</span></span> <span class="w"><span>تیم</span></span></h2></div>
-  <div class="story">
-    <div class="story-steps">
-      
-        <article class="step on" data-step="0" data-device="desktop">
-          <span class="num">۱</span>
-          <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M9 19h6.5a3.5 3.5 0 0 0 0-7h-7a3.5 3.5 0 0 1 0-7H15"/></svg></div>
-          <h3>مسیر تا هدف</h3>
-          <p>هر پروژه یه <strong class="hl">هدف</strong> و <strong class="hl">ددلاین</strong> داره، کارها <strong class="hl">مرحله‌به‌مرحله</strong> و پشت هم.</p>
-          <div class="step-shot"><figure class="window"><img src="assets/shots/04-path-to-goal.png" srcset="assets/shots/04-path-to-goal-720.webp 720w, assets/shots/04-path-to-goal-1000.webp 1000w, assets/shots/04-path-to-goal.png 1424w" sizes="(max-width: 900px) 92vw, 780px" alt="مسیر تا هدف" loading="lazy" width="1424" height="861"></figure></div>
-        </article>
-      
-        <article class="step " data-step="1" data-device="desktop">
-          <span class="num">۲</span>
-          <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6.3L12 16.5 6.5 19.5l1-6.3L3 8.9 9 8z"/></svg></div>
-          <h3>نقش‌ها</h3>
-          <p>مالک، مدیر، عضو، مهمان. <strong class="hl">عضو کار پیشنهاد می‌ده و مدیر تأیید می‌کنه.</strong></p>
-          <div class="step-shot"><figure class="window"><img src="assets/shots/02-team.png" srcset="assets/shots/02-team-720.webp 720w, assets/shots/02-team-1000.webp 1000w, assets/shots/02-team.png 1424w" sizes="(max-width: 900px) 92vw, 780px" alt="نقش‌ها" loading="lazy" width="1424" height="861"></figure></div>
-        </article>
-      
-        <article class="step " data-step="2" data-device="phone">
-          <span class="num">۳</span>
-          <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></div>
-          <h3>دعوت</h3>
-          <p>با <strong class="hl">ایمیل</strong>، <strong class="hl">آیدی لانه</strong> یا <strong class="hl">لینک</strong>. کسی که با لینک میاد، اول <strong class="hl">منتظر تأیید مدیر</strong> می‌مونه.</p>
-          <div class="step-shot"><figure class="phone"><img src="assets/shots/phone-02-team.png" srcset="assets/shots/phone-02-team-260.webp 260w, assets/shots/phone-02-team.png 384w" sizes="(max-width: 900px) 60vw, 260px" alt="دعوت" loading="lazy" width="384" height="821"></figure></div>
-        </article>
-      
-        <article class="step " data-step="3" data-device="phone">
-          <span class="num">۴</span>
-          <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></div>
-          <h3>دادن کار و خبرها</h3>
-          <p>کار رو بده به هم‌تیمی. خبرها: <strong class="hl">«کار داد»</strong>، <strong class="hl">«منتظرتم»</strong>، <strong class="hl">«تموم شد، نوبتته»</strong>.</p>
-          <div class="step-shot"><figure class="phone"><img src="assets/shots/phone-01-today.png" srcset="assets/shots/phone-01-today-260.webp 260w, assets/shots/phone-01-today.png 384w" sizes="(max-width: 900px) 60vw, 260px" alt="دادن کار و خبرها" loading="lazy" width="384" height="821"></figure></div>
-        </article>
-      
-        <article class="step " data-step="4" data-device="desktop">
-          <span class="num">۵</span>
-          <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4a4 4 0 0 1 0 8M22 21a7 7 0 0 0-4-6.3"/></svg></div>
-          <h3>صفحهٔ تیم</h3>
-          <p><strong class="hl">کی آنلاینه.</strong> برای مدیرها صفحهٔ هر نفر: کارهای باز و تموم‌شده، معمولاً کی کار تموم می‌کنه، <strong class="hl">درصد به‌موقع</strong>، و دادن کار به یکی دیگه (به <strong class="hl">هر دو نفر</strong> خبر می‌ره).</p>
-          <div class="step-shot"><figure class="window"><img src="assets/shots/03-person.png" srcset="assets/shots/03-person-720.webp 720w, assets/shots/03-person-1000.webp 1000w, assets/shots/03-person.png 1424w" sizes="(max-width: 900px) 92vw, 780px" alt="صفحهٔ تیم" loading="lazy" width="1424" height="861"></figure></div>
-        </article>
-      
-    </div>
-    <div class="story-stage" aria-hidden="true">
-      <div class="stage-chassis">
-        <div class="stage-desktop">
-          <div class="chassis-chrome">
-            <div class="chrome-dots"><i></i><i></i><i></i></div>
-            <div class="chrome-address chrome-empty"></div>
-          </div>
-          <div class="stage-desktop-screens">
-            
-              <figure class="stage-screen stage-screen-desktop on" data-step="0">
-                <img src="assets/shots/04-path-to-goal.png" srcset="assets/shots/04-path-to-goal-720.webp 720w, assets/shots/04-path-to-goal-1000.webp 1000w, assets/shots/04-path-to-goal.png 1424w" sizes="(max-width: 900px) 92vw, 780px" alt="مسیر تا هدف" width="1424" height="861" loading="lazy">
-              </figure>
-            
-              <figure class="stage-screen stage-screen-desktop " data-step="1">
-                <img src="assets/shots/02-team.png" srcset="assets/shots/02-team-720.webp 720w, assets/shots/02-team-1000.webp 1000w, assets/shots/02-team.png 1424w" sizes="(max-width: 900px) 92vw, 780px" alt="نقش‌ها" width="1424" height="861" loading="lazy">
-              </figure>
-            
-              <figure class="stage-screen stage-screen-desktop " data-step="4">
-                <img src="assets/shots/03-person.png" srcset="assets/shots/03-person-720.webp 720w, assets/shots/03-person-1000.webp 1000w, assets/shots/03-person.png 1424w" sizes="(max-width: 900px) 92vw, 780px" alt="صفحهٔ تیم" width="1424" height="861" loading="lazy">
-              </figure>
-            
-          </div>
-        </div>
-        <div class="stage-phone">
-          <div class="phone">
-            <div class="stage-phone-screens">
-              
-                <figure class="stage-screen stage-screen-phone" data-step="2">
-                  <img src="assets/shots/phone-02-team.png" srcset="assets/shots/phone-02-team-260.webp 260w, assets/shots/phone-02-team.png 384w" sizes="(max-width: 900px) 60vw, 260px" alt="دعوت" width="384" height="821" loading="lazy">
-                </figure>
-              
-                <figure class="stage-screen stage-screen-phone" data-step="3">
-                  <img src="assets/shots/phone-01-today.png" srcset="assets/shots/phone-01-today-260.webp 260w, assets/shots/phone-01-today.png 384w" sizes="(max-width: 900px) 60vw, 260px" alt="دادن کار و خبرها" width="384" height="821" loading="lazy">
-                </figure>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-    <aside class="callout" data-reveal>
-      <div class="callout-icon"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-      <div class="callout-text">
-        <b>حریم خصوصی تیم</b>
-        <p>عضو و مهمان <strong class="hl">فقط می‌بینن کی توی تیمه و نقشش چیه.</strong></p>
-      </div>
-    </aside>
-  
-</section>
-<section  class="gallery-section">
-  
-  <div class="gallery-wrapper">
-    <div class="gallery-track" tabindex="0" aria-label="گالری تصاویر محیط کاربری لانه">
-      
-        <div class="gallery-item is-desktop">
-          <div class="gallery-visual"><figure class="window"><img src="assets/shots/06-projects.png" srcset="assets/shots/06-projects-720.webp 720w, assets/shots/06-projects-1000.webp 1000w, assets/shots/06-projects.png 1424w" sizes="(max-width: 900px) 92vw, 780px" alt="پروژه‌ها" loading="lazy" width="1424" height="861"></figure></div>
-          <span class="gallery-tag">پروژه‌ها</span>
-        </div>
-      
-        <div class="gallery-item is-phone">
-          <div class="gallery-visual"><figure class="phone"><img src="assets/shots/phone-03-person.png" srcset="assets/shots/phone-03-person-260.webp 260w, assets/shots/phone-03-person.png 384w" sizes="(max-width: 900px) 60vw, 260px" alt="صفحهٔ هر نفر" loading="lazy" width="384" height="821"></figure></div>
-          <span class="gallery-tag">صفحهٔ هر نفر</span>
-        </div>
-      
-        <div class="gallery-item is-desktop">
-          <div class="gallery-visual"><figure class="window"><img src="assets/shots/07-calendar.png" srcset="assets/shots/07-calendar-720.webp 720w, assets/shots/07-calendar-1000.webp 1000w, assets/shots/07-calendar.png 1424w" sizes="(max-width: 900px) 92vw, 780px" alt="تقویم کاری" loading="lazy" width="1424" height="861"></figure></div>
-          <span class="gallery-tag">تقویم کاری</span>
-        </div>
-      
-        <div class="gallery-item is-phone">
-          <div class="gallery-visual"><figure class="phone"><img src="assets/shots/phone-04-projects.png" srcset="assets/shots/phone-04-projects-260.webp 260w, assets/shots/phone-04-projects.png 384w" sizes="(max-width: 900px) 60vw, 260px" alt="پروژه‌ها" loading="lazy" width="384" height="821"></figure></div>
-          <span class="gallery-tag">پروژه‌ها</span>
-        </div>
-      
-        <div class="gallery-item is-desktop">
-          <div class="gallery-visual"><figure class="window"><img src="assets/shots/08-ideas.png" srcset="assets/shots/08-ideas-720.webp 720w, assets/shots/08-ideas-1000.webp 1000w, assets/shots/08-ideas.png 1424w" sizes="(max-width: 900px) 92vw, 780px" alt="ایده‌ها" loading="lazy" width="1424" height="861"></figure></div>
-          <span class="gallery-tag">ایده‌ها</span>
-        </div>
-      
-    </div>
-    <div class="gallery-nav" aria-hidden="true">
-      <button class="gallery-btn prev" aria-label="قبلی"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-      <button class="gallery-btn next" aria-label="بعدی"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
-    </div>
+
+<section class="nests" aria-label="لانهٔ شخصی و لانهٔ تیم">
+  <div class="container nests-grid">
+    <figure class="nests-shot"><img class="shot shot--desk " src="assets/shots/01-today.png" srcset="assets/shots/01-today-720.webp 720w, assets/shots/01-today-1000.webp 1000w, assets/shots/01-today.png 1424w" sizes="(max-width: 60rem) 92vw, 820px" alt="لانه" width="1424" height="861" fetchpriority="high">
+      <img class="shot shot--phone nests-phone" src="assets/shots/phone-01-today.png" srcset="assets/shots/phone-01-today-260.webp 260w, assets/shots/phone-01-today.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="لانه" width="384" height="821" loading="lazy"></figure>
+    <div class="nests-list"><div class="nest nest--personal">
+      <h2>لانهٔ شخصی</h2><ul><li><strong>آفلاین</strong></li><li>روی دستگاه خودت</li><li>هیچ‌وقت به سرور <strong>نمی‌ره</strong></li></ul></div><div class="nest nest--team">
+      <h2>لانهٔ تیم</h2><ul><li>فضای کار <strong>مشترک</strong></li><li>همگام‌سازی <strong>زنده</strong> بین گوشی و کامپیوتر</li></ul></div></div>
   </div>
 </section>
-<section id="claude" class="block block-claude">
-  <div class="spot">
-    <div class="spot-luminary" aria-hidden="true">
-      <img src="assets/media/crystal.jpg" alt="" class="crystal-img" loading="lazy">
-      <div class="crystal-ambient"></div>
+
+<section class="team" id="team" aria-labelledby="team-h">
+  <div class="container">
+    <h2 id="team-h">لانهٔ تیم</h2>
+    <div class="pinned">
+      <ol class="pinned-steps"><li class="pstep" data-step="0">
+        <h3>مسیر تا هدف</h3><p>هر پروژه یه <strong>هدف</strong> و <strong>ددلاین</strong> داره، کارها <strong>مرحله‌به‌مرحله</strong> و پشت هم.</p>
+        <div class="pstep-shot"><img class="shot shot--desk " src="assets/shots/04-path-to-goal.png" srcset="assets/shots/04-path-to-goal-720.webp 720w, assets/shots/04-path-to-goal-1000.webp 1000w, assets/shots/04-path-to-goal.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="مسیر تا هدف" width="1424" height="861" loading="lazy"></div></li><li class="pstep" data-step="1">
+        <h3>نقش‌ها</h3><p>مالک، مدیر، عضو، مهمان. <strong>عضو کار پیشنهاد می‌ده و مدیر تأیید می‌کنه.</strong></p>
+        <div class="pstep-shot"><img class="shot shot--desk " src="assets/shots/02-team.png" srcset="assets/shots/02-team-720.webp 720w, assets/shots/02-team-1000.webp 1000w, assets/shots/02-team.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="نقش‌ها" width="1424" height="861" loading="lazy"></div></li><li class="pstep" data-step="2">
+        <h3>دعوت</h3><p>با <strong>ایمیل</strong>، <strong>آیدی لانه</strong> یا <strong>لینک</strong>. کسی که با لینک میاد، اول <strong>منتظر تأیید مدیر</strong> می‌مونه.</p>
+        <div class="pstep-shot"><img class="shot shot--phone " src="assets/shots/phone-02-team.png" srcset="assets/shots/phone-02-team-260.webp 260w, assets/shots/phone-02-team.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="دعوت" width="384" height="821" loading="lazy"></div></li><li class="pstep" data-step="3">
+        <h3>دادن کار و خبرها</h3><p>کار رو بده به هم‌تیمی. خبرها: <strong>«کار داد»</strong>، <strong>«منتظرتم»</strong>، <strong>«تموم شد، نوبتته»</strong>.</p>
+        <div class="pstep-shot"><img class="shot shot--phone " src="assets/shots/phone-01-today.png" srcset="assets/shots/phone-01-today-260.webp 260w, assets/shots/phone-01-today.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="دادن کار و خبرها" width="384" height="821" loading="lazy"></div></li><li class="pstep" data-step="4">
+        <h3>صفحهٔ تیم</h3><p><strong>کی آنلاینه.</strong> برای مدیرها صفحهٔ هر نفر: کارهای باز و تموم‌شده، معمولاً کی کار تموم می‌کنه، <strong>درصد به‌موقع</strong>، و دادن کار به یکی دیگه (به <strong>هر دو نفر</strong> خبر می‌ره).</p>
+        <div class="pstep-shot"><img class="shot shot--desk " src="assets/shots/03-person.png" srcset="assets/shots/03-person-720.webp 720w, assets/shots/03-person-1000.webp 1000w, assets/shots/03-person.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="صفحهٔ تیم" width="1424" height="861" loading="lazy"></div></li></ol>
+      <div class="pinned-stage" aria-hidden="true"><figure class="pframe is-on" data-frame="0"><img class="shot shot--desk " src="assets/shots/04-path-to-goal.png" srcset="assets/shots/04-path-to-goal-720.webp 720w, assets/shots/04-path-to-goal-1000.webp 1000w, assets/shots/04-path-to-goal.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="" width="1424" height="861" loading="lazy"></figure><figure class="pframe" data-frame="1"><img class="shot shot--desk " src="assets/shots/02-team.png" srcset="assets/shots/02-team-720.webp 720w, assets/shots/02-team-1000.webp 1000w, assets/shots/02-team.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="" width="1424" height="861" loading="lazy"></figure><figure class="pframe pframe--phone" data-frame="2"><img class="shot shot--phone " src="assets/shots/phone-02-team.png" srcset="assets/shots/phone-02-team-260.webp 260w, assets/shots/phone-02-team.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="" width="384" height="821" loading="lazy"></figure><figure class="pframe pframe--phone" data-frame="3"><img class="shot shot--phone " src="assets/shots/phone-01-today.png" srcset="assets/shots/phone-01-today-260.webp 260w, assets/shots/phone-01-today.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="" width="384" height="821" loading="lazy"></figure><figure class="pframe" data-frame="4"><img class="shot shot--desk " src="assets/shots/03-person.png" srcset="assets/shots/03-person-720.webp 720w, assets/shots/03-person-1000.webp 1000w, assets/shots/03-person.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="" width="1424" height="861" loading="lazy"></figure></div>
     </div>
-
-    <div class="head"><h2 class="split"><span class="w"><span>Claude،</span></span> <span class="w"><span>مدیر</span></span> <span class="w"><span>پروژهٔ</span></span> <span class="w"><span>تیمت</span></span></h2></div>
-
-    <div class="spot-grid">
-      <ul class="spot-points">
-        
-          <li data-reveal>
-            <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="5"/><path d="M11.5 11.5L21 2M17 6l3 3M14 9l2 2"/></svg></div>
-            <p>Claude به لانهٔ تیمت وصل می‌شه و <strong class="hl">دقیقاً همون دسترسی تو</strong> رو داره.</p>
-          </li>
-        
-          <li data-reveal>
-            <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
-            <p>تیم رو <strong class="hl">تحلیل</strong> می‌کنه: گزارش هفتگی، پیش‌بینی اینکه پروژه <strong class="hl">به ددلاین می‌رسه یا نه</strong>، <strong class="hl">گلوگاه‌ها</strong>، اینکه کی سرش شلوغه و کی جا داره.</p>
-          </li>
-        
-          <li data-reveal>
-            <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M9 19h6.5a3.5 3.5 0 0 0 0-7h-7a3.5 3.5 0 0 1 0-7H15"/></svg></div>
-            <p>پروژه <strong class="hl">طراحی</strong> می‌کنه: مسیر رو با توجه به <strong class="hl">سمت و بار کاری</strong> هر نفر می‌چینه.</p>
-          </li>
-        
-          <li data-reveal>
-            <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></div>
-            <p><strong class="hl">قبل از هر تغییری می‌پرسه</strong>، و آدم‌ها خودکار خبردار می‌شن.</p>
-          </li>
-        
-      </ul>
-
-      <div class="spot-side">
-        <div class="prompts" data-reveal>
-          <div class="prompts-head">
-            <small>نمونه جمله‌ها</small>
-          </div>
-          <div class="prompt-chips">
-            
-              <button class="prompt-chip on" data-prompt-idx="0">
-                <span class="chip-spark">✦</span>
-                <span>یه بررسی هفتگی از تیمم بکن</span>
-              </button>
-            
-              <button class="prompt-chip " data-prompt-idx="1">
-                <span class="chip-spark">✦</span>
-                <span>برای لانچ بعدی یه پروژه طراحی کن</span>
-              </button>
-            
-              <button class="prompt-chip " data-prompt-idx="2">
-                <span class="chip-spark">✦</span>
-                <span>کار رو بین بچه‌ها متعادل کن</span>
-              </button>
-            
-          </div>
-        </div>
-
-        <div class="install" data-reveal>
-          <div class="install-top">
-            <small>نصب با یه خط</small>
-            <div class="tabs" role="tablist">
-              
-                <button class="on" data-cmd="irm https://raw.githubusercontent.com/iamTheSilent/laneh-releases/main/ai/install.ps1 | iex" role="tab" aria-selected="true">ویندوز</button>
-              
-                <button class="" data-cmd="curl -fsSL https://raw.githubusercontent.com/iamTheSilent/laneh-releases/main/ai/install.sh | sh" role="tab" aria-selected="false">مک/لینوکس</button>
-              
-            </div>
-          </div>
-          <div class="cmd">
-            <code dir="ltr">irm https://raw.githubusercontent.com/iamTheSilent/laneh-releases/main/ai/install.ps1 | iex</code>
-            <button class="copy" aria-label="کپی دستور">
-              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
-              <span>کپی</span>
-            </button>
-          </div>
-          
-            <a class="guide" href="https://github.com/iamTheSilent/laneh-releases/blob/main/ai/README.md" target="_blank" rel="noopener">
-              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
-              <span>راهنما</span>
-              <span class="arr">←</span>
-            </a>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="spot-shots">
-      
-        <div class="spot-shot-wrap on" data-shot-idx="0" data-reveal>
-          <div class="chassis-chrome">
-            <div class="chrome-dots"><i></i><i></i><i></i></div>
-            <div class="chrome-address chrome-empty"></div>
-          </div>
-          <figure class="window">
-            <img src="assets/shots/05-claude-path.png" srcset="assets/shots/05-claude-path-720.webp 720w, assets/shots/05-claude-path-1000.webp 1000w, assets/shots/05-claude-path.png 1424w" sizes="(max-width: 900px) 92vw, 780px" alt="Claude، مدیر پروژهٔ تیمت" width="1424" height="861" loading="lazy">
-          </figure>
-        </div>
-      
-        <div class="spot-shot-wrap " data-shot-idx="1" data-reveal>
-          <div class="chassis-chrome">
-            <div class="chrome-dots"><i></i><i></i><i></i></div>
-            <div class="chrome-address chrome-empty"></div>
-          </div>
-          <figure class="window">
-            <img src="assets/shots/09-connect-claude.png" srcset="assets/shots/09-connect-claude-720.webp 720w, assets/shots/09-connect-claude-1000.webp 1000w, assets/shots/09-connect-claude.png 1424w" sizes="(max-width: 900px) 92vw, 780px" alt="Claude، مدیر پروژهٔ تیمت" width="1424" height="861" loading="lazy">
-          </figure>
-        </div>
-      
-    </div>
+    <p class="privacy"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>حریم خصوصی تیم</b> عضو و مهمان <strong>فقط می‌بینن کی توی تیمه و نقشش چیه.</strong></span></p>
   </div>
 </section>
-<section id="download" class="block narrow block-download">
-  <div class="head"><h2 class="split"><span class="w"><span>دانلود</span></span></h2></div>
-  <div class="dl">
-    
-      <article data-reveal class="dl-card">
-        <div class="dl-card-head">
-          <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5l7.5-1v7H3zM12 4.3l9-1.3v8.5h-9zM3 12.5h7.5v7l-7.5-1zM12 12.5h9V21l-9-1.3z" fill="currentColor" stroke="none"/></svg></div>
-          <h3>ویندوز</h3>
-        </div>
-        <div class="dl-options">
-          
-            <a class="dl-opt primary" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener">
-              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-              <span>نصب‌کنندهٔ فارسی</span>
-              <em>پیشنهادی</em>
-            </a>
-          
-            <a class="dl-opt " href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener">
-              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-              <span>نسخهٔ zip بدون نصب</span>
-              
-            </a>
-          
-        </div>
-        
-          <div class="dl-note">
-            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18h.01"/></svg>
-            <div>ویندوز ممکنه هشدار «ناشر ناشناس» بده. <strong class="hl"><bdi dir="ltr">More info</bdi></strong> و بعد <strong class="hl"><bdi dir="ltr">Run anyway</bdi></strong> رو بزن.</div>
-          </div>
-        
-      </article>
-    
-      <article data-reveal class="dl-card">
-        <div class="dl-card-head">
-          <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10v7a1 1 0 0 0 1 1h1v3M18 10v7a1 1 0 0 1-1 1h-1v3M6 10a6 6 0 0 1 12 0zM3 11v5M21 11v5M8 4l1.5 2M16 4l-1.5 2"/></svg></div>
-          <h3>اندروید</h3>
-        </div>
-        <div class="dl-options">
-          
-            <a class="dl-opt primary" href="https://cafebazaar.ir/app/app.laneh" target="_blank" rel="noopener">
-              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-              <span>کافه‌بازار</span>
-              
-            </a>
-          
-            <a class="dl-opt " href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener">
-              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-              <span>APK</span>
-              
-            </a>
-          
-        </div>
-        
-      </article>
-    
-      <article data-reveal class="dl-card">
-        <div class="dl-card-head">
-          <div class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
-          <h3>وب</h3>
-        </div>
-        <div class="dl-options">
-          
-            <a class="dl-opt primary" href="https://37-32-38-170.sslip.io/app/" target="_blank" rel="noopener">
-              <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-              <span>وب (بدون نصب، توی مرورگر)</span>
-              
-            </a>
-          
-        </div>
-        
-      </article>
-    
-  </div>
-  
-    <a class="latest" data-reveal href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener">
-      <div class="latest-label">
-        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
-        <span>لینک همیشه‌به‌روز</span>
+
+<section class="claude" id="claude" aria-labelledby="claude-h">
+  <div class="container">
+    <h2 id="claude-h">Claude، مدیر پروژهٔ تیمت</h2>
+    <div class="claude-grid">
+      <div class="map-wrap"><svg class="map" viewBox="0 0 960 560" role="img" aria-labelledby="map-t">
+  <title id="map-t">Claude با دسترسی تو به لانهٔ تیم وصل می‌شه، تحلیل و طراحی می‌کنه، قبل از هر تغییری می‌پرسه و آدم‌ها خبردار می‌شن.</title>
+  <g class="map-edges">
+    <path d="M790 280 C 700 280, 640 280, 560 280"/>
+    <path d="M400 280 C 330 280, 310 120, 270 120"/><path d="M400 280 C 330 280, 310 200, 270 200"/><path d="M400 280 C 330 280, 310 280, 270 280"/><path d="M400 280 C 330 280, 310 360, 270 360"/><path d="M400 280 C 330 280, 310 440, 270 440"/>
+    <path d="M480 330 C 480 400, 480 420, 480 470"/>
+  </g>
+  <g class="map-node map-node--you" data-node><rect x="790" y="244" width="140" height="72" rx="16"/><text x="860" y="276">تو</text><text class="map-sub" x="860" y="300">همون دسترسی</text></g>
+  <g class="map-node map-node--core" data-node><rect x="400" y="230" width="160" height="100" rx="20"/><text x="480" y="288">Claude</text></g>
+  <g class="map-node" data-node><rect x="10" y="94" width="260" height="52" rx="14"/><text x="140" y="126">گزارش هفتگی</text></g><g class="map-node" data-node><rect x="10" y="174" width="260" height="52" rx="14"/><text x="140" y="206">پیش‌بینی ددلاین</text></g><g class="map-node" data-node><rect x="10" y="254" width="260" height="52" rx="14"/><text x="140" y="286">گلوگاه‌ها</text></g><g class="map-node" data-node><rect x="10" y="334" width="260" height="52" rx="14"/><text x="140" y="366">کی سرش شلوغه و کی جا داره</text></g><g class="map-node" data-node><rect x="10" y="414" width="260" height="52" rx="14"/><text x="140" y="446">مسیر پروژه</text></g>
+  <g class="map-node map-node--ask" data-node><rect x="370" y="470" width="220" height="64" rx="16"/><text x="480" y="498">قبل از هر تغییری می‌پرسه</text><text class="map-sub" x="480" y="520">آدم‌ها خبردار می‌شن</text></g>
+</svg></div>
+      <ul class="claude-points"><li>Claude به لانهٔ تیمت وصل می‌شه و <strong>دقیقاً همون دسترسی تو</strong> رو داره.</li><li>تیم رو <strong>تحلیل</strong> می‌کنه: گزارش هفتگی، پیش‌بینی اینکه پروژه <strong>به ددلاین می‌رسه یا نه</strong>، <strong>گلوگاه‌ها</strong>، اینکه کی سرش شلوغه و کی جا داره.</li><li>پروژه <strong>طراحی</strong> می‌کنه: مسیر رو با توجه به <strong>سمت و بار کاری</strong> هر نفر می‌چینه.</li><li><strong>قبل از هر تغییری می‌پرسه</strong>، و آدم‌ها خودکار خبردار می‌شن.</li></ul>
+    </div>
+    <div class="claude-use">
+      <div class="prompts"><h3>نمونه جمله‌ها</h3><p class="prompt">یه بررسی هفتگی از تیمم بکن</p><p class="prompt">برای لانچ بعدی یه پروژه طراحی کن</p><p class="prompt">کار رو بین بچه‌ها متعادل کن</p></div>
+      <div class="install"><h3>نصب با یه خط</h3>
+        <div class="seg" role="tablist" aria-label="نصب با یه خط"><button type="button" role="tab" aria-selected="true" data-cmd="irm https://raw.githubusercontent.com/iamTheSilent/laneh-releases/main/ai/install.ps1 | iex">ویندوز</button><button type="button" role="tab" aria-selected="false" data-cmd="curl -fsSL https://raw.githubusercontent.com/iamTheSilent/laneh-releases/main/ai/install.sh | sh" tabindex="-1">مک/لینوکس</button></div>
+        <div class="cmd"><code dir="ltr">irm https://raw.githubusercontent.com/iamTheSilent/laneh-releases/main/ai/install.ps1 | iex</code><button type="button" class="btn btn--quiet copy"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>کپی</span></button></div>
+        <a class="guide" href="https://github.com/iamTheSilent/laneh-releases/blob/main/ai/README.md" target="_blank" rel="noopener">راهنما</a>
       </div>
-      <code dir="ltr">github.com/iamTheSilent/laneh-releases/releases/latest</code>
-      <span class="arr">←</span>
-    </a>
-  
-</section>
-</main>
-
-<footer class="site-footer">
-  <div class="footer-in">
-    <div class="footer-brand">
-      <img src="assets/icon.png" alt="" width="28" height="28">
-      <b>لانه</b>
     </div>
-    <div class="footer-links">
-      <a href="changelog.html">تازه‌ها</a><a href="https://github.com/iamTheSilent/laneh-releases/blob/main/privacy.md" target="_blank" rel="noopener">سیاست حریم خصوصی</a><a href="mailto:usingthisforbot@gmail.com">usingthisforbot@gmail.com</a>
-    </div>
-    <small class="footer-copy">© 2026 لانه</small>
+    <div class="claude-shots"><figure><img class="shot shot--desk " src="assets/shots/05-claude-path.png" srcset="assets/shots/05-claude-path-720.webp 720w, assets/shots/05-claude-path-1000.webp 1000w, assets/shots/05-claude-path.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="Claude، مدیر پروژهٔ تیمت" width="1424" height="861" loading="lazy"></figure><figure><img class="shot shot--desk " src="assets/shots/09-connect-claude.png" srcset="assets/shots/09-connect-claude-720.webp 720w, assets/shots/09-connect-claude-1000.webp 1000w, assets/shots/09-connect-claude.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="Claude، مدیر پروژهٔ تیمت" width="1424" height="861" loading="lazy"></figure></div>
   </div>
-</footer>
+</section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<section class="screens" aria-label="پروژه‌ها، صفحهٔ هر نفر، تقویم کاری، پروژه‌ها، ایده‌ها">
+  <ul class="rail" tabindex="0" aria-label="پروژه‌ها، صفحهٔ هر نفر، تقویم کاری، پروژه‌ها، ایده‌ها"><li class=""><figure><img class="shot shot--desk " src="assets/shots/06-projects.png" srcset="assets/shots/06-projects-720.webp 720w, assets/shots/06-projects-1000.webp 1000w, assets/shots/06-projects.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="پروژه‌ها" width="1424" height="861" loading="lazy"><figcaption>پروژه‌ها</figcaption></figure></li><li class="is-phone"><figure><img class="shot shot--phone " src="assets/shots/phone-03-person.png" srcset="assets/shots/phone-03-person-260.webp 260w, assets/shots/phone-03-person.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="صفحهٔ هر نفر" width="384" height="821" loading="lazy"><figcaption>صفحهٔ هر نفر</figcaption></figure></li><li class=""><figure><img class="shot shot--desk " src="assets/shots/07-calendar.png" srcset="assets/shots/07-calendar-720.webp 720w, assets/shots/07-calendar-1000.webp 1000w, assets/shots/07-calendar.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="تقویم کاری" width="1424" height="861" loading="lazy"><figcaption>تقویم کاری</figcaption></figure></li><li class="is-phone"><figure><img class="shot shot--phone " src="assets/shots/phone-04-projects.png" srcset="assets/shots/phone-04-projects-260.webp 260w, assets/shots/phone-04-projects.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="پروژه‌ها" width="384" height="821" loading="lazy"><figcaption>پروژه‌ها</figcaption></figure></li><li class=""><figure><img class="shot shot--desk " src="assets/shots/08-ideas.png" srcset="assets/shots/08-ideas-720.webp 720w, assets/shots/08-ideas-1000.webp 1000w, assets/shots/08-ideas.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="ایده‌ها" width="1424" height="861" loading="lazy"><figcaption>ایده‌ها</figcaption></figure></li></ul>
+</section>
+
+<section class="download" id="download" aria-labelledby="dl-h">
+  <div class="container dl-grid">
+    <div class="dl-text">
+      <h2 id="dl-h">دانلود</h2>
+      <div class="platforms"><div class="platform"><h3>ویندوز</h3>
+        <ul><li><a class="btn btn--quiet btn--lead" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>نصب‌کنندهٔ فارسی</span></a> <span class="tag">پیشنهادی</span></li><li><a class="btn btn--quiet" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>نسخهٔ zip بدون نصب</span></a></li></ul>
+        <p class="note">ویندوز ممکنه هشدار «ناشر ناشناس» بده. <strong>More info</strong> و بعد <strong>Run anyway</strong> رو بزن.</p></div><div class="platform"><h3>اندروید</h3>
+        <ul><li><a class="btn btn--quiet btn--lead" href="https://cafebazaar.ir/app/app.laneh" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>کافه‌بازار</span></a></li><li><a class="btn btn--quiet" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>APK</span></a></li></ul>
+        </div><div class="platform"><h3>وب</h3>
+        <ul><li><a class="btn btn--quiet btn--lead" href="https://37-32-38-170.sslip.io/app/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>وب (بدون نصب، توی مرورگر)</span></a></li></ul>
+        </div></div>
+      <p class="latest"><a href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener">لینک همیشه‌به‌روز</a> <code dir="ltr">github.com/iamTheSilent/laneh-releases/releases/latest</code></p>
+    </div>
+    <figure class="dl-shot"><img class="shot shot--phone " src="assets/shots/phone-04-projects.png" srcset="assets/shots/phone-04-projects-260.webp 260w, assets/shots/phone-04-projects.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="دانلود" width="384" height="821" loading="lazy"></figure>
+  </div>
+</section></main>
+<footer class="colophon"><div class="container">
+  <p><b>لانه</b> <a href="changelog.html">تازه‌ها</a> <a href="https://github.com/iamTheSilent/laneh-releases/blob/main/privacy.md" target="_blank" rel="noopener">سیاست حریم خصوصی</a> <a href="mailto:usingthisforbot@gmail.com">usingthisforbot@gmail.com</a> <span class="num">© 2026</span></p>
+</div></footer>
 <script src="assets/app.js" defer></script>
-</body>
-</html>
+</body></html>
