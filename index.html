@@ -6,10 +6,11 @@
 <meta name="theme-color" content="#262936">
 <meta property="og:title" content="لانه"><meta property="og:description" content="لانه؛ برنامه‌ریز روز و تیم.">
 <link rel="icon" href="assets/icon.png"><meta property="og:image" content="assets/icon.png">
-<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('m')</script>
+<script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('m','intro-active');</script>
 <link rel="preload" href="assets/fonts/pofak-900.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=mwcm1vi0">
 </head><body>
+<div class="spine" aria-hidden="true"></div>
 <div class="loader"><!-- Laneh hatching intro (same shapes and timing as the app's intro). Inlined into the loader; defines window.introDone. -->
 <style>
   .intro-stage{width:min(70vmin,360px);aspect-ratio:1}
@@ -73,114 +74,734 @@ window.introDone = !document.documentElement.classList.contains('m') ? Promise.r
 </div>
 <header class="bar"><div class="container bar-in">
   <a class="wordmark" href="index.html"><img src="assets/icon.png" alt="" width="36" height="36">لانه</a>
-  <nav aria-label="لانه"><a href="index.html#team">لانهٔ تیم</a><a href="index.html#claude">Claude</a><a href="index.html#download">دانلود</a><a href="changelog.html">تازه‌ها</a></nav>
-  <a class="btn btn--small" href="index.html#download"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>دانلود</span></a>
+  <nav aria-label="لانه"><a href="index.html#team">لانهٔ تیم</a><a href="index.html#claude">MCP</a><a href="index.html#desktop">روی ویندوز</a><a href="index.html#download">دانلود</a><a href="changelog.html">تازه‌ها</a></nav>
+  <a class="btn btn--small btn--primary" href="index.html#download"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>دانلود</span></a>
 </div></header>
 <main>
 <section class="hero" aria-labelledby="hero-h">
   <div class="container hero-grid">
     <div class="hero-text">
-      <h1 id="hero-h">لانه<span class="h1-sub">برنامه‌ریز روز و تیم</span></h1>
-      <p class="lead">تمام چیزی که برای شروع یک ایده یا کار بخوای</p>
-      <div class="actions"><a class="btn btn--primary" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5l7.5-1v7H3zM12 4.3l9-1.3v8.5h-9zM3 12.5h7.5v7l-7.5-1zM12 12.5h9V21l-9-1.3z" fill="currentColor" stroke="none"/></svg><span>ویندوز (نصب‌کننده)</span></a><a class="btn btn--quiet" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10v7a1 1 0 0 0 1 1h1v3M18 10v7a1 1 0 0 1-1 1h-1v3M6 10a6 6 0 0 1 12 0zM3 11v5M21 11v5M8 4l1.5 2M16 4l-1.5 2"/></svg><span>اندروید (APK)</span></a><a class="btn btn--quiet" href="https://cafebazaar.ir/app/app.laneh" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>کافه‌بازار</span></a><a class="btn btn--quiet" href="https://37-32-38-170.sslip.io/app/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span>وب (بدون نصب، توی مرورگر)</span></a></div>
-      <p class="hero-note"><a href="changelog.html">تازه‌ها</a> <span class="num">۱.۲.۰</span></p>
+      <h1 id="hero-h" class="hero-reveal" style="--i:0">لانه<span class="h1-sub">برنامه‌ریز روز و تیم</span></h1>
+      <p class="lead hero-reveal" style="--i:1">تمام چیزی که برای شروع یک ایده یا کار بخوای</p>
+      <div class="actions hero-reveal" style="--i:2"><a class="btn btn--primary" href="https://37-32-38-170.sslip.io/app/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span>باز کردن در مرورگر</span></a><a class="btn btn--quiet" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5l7.5-1v7H3zM12 4.3l9-1.3v8.5h-9zM3 12.5h7.5v7l-7.5-1zM12 12.5h9V21l-9-1.3z" fill="currentColor" stroke="none"/></svg><span>دانلود ویندوز</span></a><a class="btn btn--quiet" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10v7a1 1 0 0 0 1 1h1v3M18 10v7a1 1 0 0 1-1 1h-1v3M6 10a6 6 0 0 1 12 0zM3 11v5M21 11v5M8 4l1.5 2M16 4l-1.5 2"/></svg><span>دانلود اندروید</span></a><a class="btn btn--quiet" href="https://cafebazaar.ir/app/app.laneh" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span>کافه‌بازار</span></a></div>
+      <p class="hero-note hero-reveal" style="--i:3"><a href="changelog.html">تازه‌ها</a> <span class="num" data-latest="https://api.github.com/repos/iamTheSilent/laneh-releases/releases/latest"></span></p>
     </div>
-    <div class="hero-mark"><canvas class="embers" aria-hidden="true"></canvas><svg class="mark" viewBox="120 120 780 740" aria-hidden="true">
+    <div class="hero-mark hero-reveal" style="--i:3"><canvas class="embers" aria-hidden="true"></canvas><svg class="mark" viewBox="120 120 780 740" aria-hidden="true">
   <path class="mark-nest" d="M168 569 C244 663 371 756 510 756 C648 756 783 668 856 569 C832 681 688 826 510 826 C333 826 191 687 168 569 Z"/>
-  <g class="mark-bird">
-    <path class="mark-wing" d="M341 159 C382 244 490 289 553 346 C577 368 585 409 571 449 C555 490 506 524 471 556 L432 572 L425 557 L477 513 C441 527 389 514 352 477 C318 444 302 413 295 366 C347 414 402 429 451 432 C361 391 309 291 341 159 Z"/>
-    <path class="mark-body" d="M554 344 C577 296 611 279 649 281 C680 284 698 307 712 308 L754 306 L713 342 C692 357 682 380 678 413 C671 479 639 524 567 591 L513 552 C547 521 576 484 585 453 C591 418 577 377 554 344 Z"/>
-    <path class="mark-shade" d="M557 349 C576 375 585 407 580 435 C574 467 558 486 532 512 C563 469 577 420 557 349 Z"/>
-    <circle class="mark-shade" cx="667" cy="327" r="14"/>
+  <g class="mark-lean">
+    <g class="mark-bird">
+      <path class="mark-wing" d="M341 159 C382 244 490 289 553 346 C577 368 585 409 571 449 C555 490 506 524 471 556 L432 572 L425 557 L477 513 C441 527 389 514 352 477 C318 444 302 413 295 366 C347 414 402 429 451 432 C361 391 309 291 341 159 Z"/>
+      <path class="mark-body" d="M554 344 C577 296 611 279 649 281 C680 284 698 307 712 308 L754 306 L713 342 C692 357 682 380 678 413 C671 479 639 524 567 591 L513 552 C547 521 576 484 585 453 C591 418 577 377 554 344 Z"/>
+      <path class="mark-shade" d="M557 349 C576 375 585 407 580 435 C574 467 558 486 532 512 C563 469 577 420 557 349 Z"/>
+      <circle class="mark-shade" cx="667" cy="327" r="14"/>
+    </g>
   </g>
   <path class="mark-egg" d="M351 507 L415 563 L486 538 L575 626 L677 537 C713 644 655 726 519 745 C386 758 296 658 351 507 Z"/>
 </svg></div>
   </div>
 </section>
 
-<section class="nests" aria-label="لانهٔ شخصی و لانهٔ تیم">
-  <div class="container nests-grid">
-    <figure class="nests-shot"><img class="shot shot--desk " src="assets/shots/01-today.png" srcset="assets/shots/01-today-720.webp 720w, assets/shots/01-today-1000.webp 1000w, assets/shots/01-today.png 1424w" sizes="(max-width: 60rem) 92vw, 820px" alt="لانه" width="1424" height="861" fetchpriority="high">
-      <img class="shot shot--phone nests-phone" src="assets/shots/phone-01-today.png" srcset="assets/shots/phone-01-today-260.webp 260w, assets/shots/phone-01-today.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="لانه" width="384" height="821" loading="lazy"></figure>
-    <div class="nests-list"><div class="nest nest--personal">
-      <h2>لانهٔ شخصی</h2><ul><li><strong>آفلاین</strong></li><li>روی دستگاه خودت</li><li>هیچ‌وقت به سرور <strong>نمی‌ره</strong></li></ul></div><div class="nest nest--team">
-      <h2>لانهٔ تیم</h2><ul><li>فضای کار <strong>مشترک</strong></li><li>همگام‌سازی <strong>زنده</strong> بین گوشی و کامپیوتر</li></ul></div></div>
+<section class="nests" aria-label="لانهٔ من و لانهٔ تیم">
+  <div class="container"><h2 class="nests-h">دو فضا که هیچ‌وقت قاطی نمی‌شن</h2><p class="sec-sub">کارهای شخصی روی دستگاه خودت، کار تیمی همگام.</p></div>
+  <div class="container nests-duo"><div class="nest nest--personal">
+      <svg class="nest-art" viewBox="0 0 320 170" aria-hidden="true">
+  <path class="cut-line" d="M110 75 H210"/><g class="cut-x" transform="translate(160 75)"><circle r="13"/><path d="M-5-5l10 10M5-5l-10 10"/></g>
+  <g class="nd nd--off" transform="translate(250 75)"><circle class="nd-bg" r="30"/><g class="nd-ic"><rect x="-15" y="-15" width="30" height="12" rx="3"/><rect x="-15" y="2" width="30" height="12" rx="3"/><path d="M-9-9h2M-9 8h2"/></g><text y="50">سرور</text></g><g class="nd nd--me" transform="translate(70 75)"><circle class="nd-bg" r="30"/><g class="nd-ic"><rect x="-16" y="-12" width="32" height="20" rx="3"/><path d="M-6 14h12M0 8v6"/></g><text y="50">دستگاه خودت</text></g>
+  <g class="lock" transform="translate(92 50)"><rect x="-8" y="-3" width="16" height="12" rx="3"/><path d="M-4-3v-4a4 4 0 0 1 8 0v4"/></g>
+</svg>
+      <h3>لانهٔ من</h3><ul><li><strong>آفلاین</strong></li><li>روی دستگاه خودت</li><li>هیچ‌وقت به سرور <strong>نمی‌ره</strong></li></ul></div><span class="nests-wall" aria-hidden="true"></span><div class="nest nest--team">
+      <svg class="nest-art" viewBox="0 0 320 170" aria-hidden="true">
+  <path class="sync" d="M160 78 L60 35"/><path class="sync-flow" d="M160 78 L60 35"/><path class="sync" d="M160 78 L60 120"/><path class="sync-flow" d="M160 78 L60 120"/><path class="sync" d="M160 78 L260 78"/><path class="sync-flow" d="M160 78 L260 78"/>
+  <g class="hub" transform="translate(160 78)"><circle class="hub-ring" r="36"/><circle r="26"/><text y="5">تیم</text></g>
+  <g class="nd nd--t" transform="translate(60 35)"><circle class="nd-bg" r="30"/><g class="nd-ic"><rect x="-9" y="-15" width="18" height="30" rx="4"/><path d="M-3 10h6"/></g><text y="50"></text></g><g class="nd nd--t" transform="translate(60 120)"><circle class="nd-bg" r="30"/><g class="nd-ic"><rect x="-16" y="-12" width="32" height="20" rx="3"/><path d="M-6 14h12M0 8v6"/></g><text y="50"></text></g><g class="nd nd--t" transform="translate(260 78)"><circle class="nd-bg" r="30"/><g class="nd-ic"><circle r="13"/><path d="M-13 0h26M0-13a20 20 0 0 1 0 26M0-13a20 20 0 0 0 0 26"/></g><text y="50"></text></g>
+</svg>
+      <h3>لانهٔ تیم</h3><ul><li>فضای کار <strong>مشترک</strong></li><li>همگام‌سازی <strong>زنده</strong> بین گوشی، کامپیوتر و مرورگر</li></ul></div>
   </div>
 </section>
 
 <section class="team" id="team" aria-labelledby="team-h">
   <div class="container">
-    <h2 id="team-h">لانهٔ تیم</h2>
+    <h2 id="team-h">پروژه‌ها کِی تموم می‌شن؟</h2><p class="sec-sub">لانه سرعت تیم رو می‌سنجه و می‌گه کِی تموم می‌شه.</p>
     <div class="pinned">
       <ol class="pinned-steps"><li class="pstep" data-step="0">
-        <h3>مسیر تا هدف</h3><p>هر پروژه یه <strong>هدف</strong> و <strong>ددلاین</strong> داره، کارها <strong>مرحله‌به‌مرحله</strong> و پشت هم.</p>
-        <div class="pstep-shot"><img class="shot shot--desk " src="assets/shots/04-path-to-goal.png" srcset="assets/shots/04-path-to-goal-720.webp 720w, assets/shots/04-path-to-goal-1000.webp 1000w, assets/shots/04-path-to-goal.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="مسیر تا هدف" width="1424" height="861" loading="lazy"></div></li><li class="pstep" data-step="1">
-        <h3>نقش‌ها</h3><p>مالک، مدیر، عضو، مهمان. <strong>عضو کار پیشنهاد می‌ده و مدیر تأیید می‌کنه.</strong></p>
-        <div class="pstep-shot"><img class="shot shot--desk " src="assets/shots/02-team.png" srcset="assets/shots/02-team-720.webp 720w, assets/shots/02-team-1000.webp 1000w, assets/shots/02-team.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="نقش‌ها" width="1424" height="861" loading="lazy"></div></li><li class="pstep" data-step="2">
-        <h3>دعوت</h3><p>با <strong>ایمیل</strong>، <strong>آیدی لانه</strong> یا <strong>لینک</strong>. کسی که با لینک میاد، اول <strong>منتظر تأیید مدیر</strong> می‌مونه.</p>
-        <div class="pstep-shot"><img class="shot shot--phone " src="assets/shots/phone-02-team.png" srcset="assets/shots/phone-02-team-260.webp 260w, assets/shots/phone-02-team.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="دعوت" width="384" height="821" loading="lazy"></div></li><li class="pstep" data-step="3">
-        <h3>دادن کار و خبرها</h3><p>کار رو بده به هم‌تیمی. خبرها: <strong>«کار داد»</strong>، <strong>«منتظرتم»</strong>، <strong>«تموم شد، نوبتته»</strong>.</p>
-        <div class="pstep-shot"><img class="shot shot--phone " src="assets/shots/phone-01-today.png" srcset="assets/shots/phone-01-today-260.webp 260w, assets/shots/phone-01-today.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="دادن کار و خبرها" width="384" height="821" loading="lazy"></div></li><li class="pstep" data-step="4">
-        <h3>صفحهٔ تیم</h3><p><strong>کی آنلاینه.</strong> برای مدیرها صفحهٔ هر نفر: کارهای باز و تموم‌شده، معمولاً کی کار تموم می‌کنه، <strong>درصد به‌موقع</strong>، و دادن کار به یکی دیگه (به <strong>هر دو نفر</strong> خبر می‌ره).</p>
-        <div class="pstep-shot"><img class="shot shot--desk " src="assets/shots/03-person.png" srcset="assets/shots/03-person-720.webp 720w, assets/shots/03-person-1000.webp 1000w, assets/shots/03-person.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="صفحهٔ تیم" width="1424" height="861" loading="lazy"></div></li></ol>
-      <div class="pinned-stage" aria-hidden="true"><figure class="pframe is-on" data-frame="0"><img class="shot shot--desk " src="assets/shots/04-path-to-goal.png" srcset="assets/shots/04-path-to-goal-720.webp 720w, assets/shots/04-path-to-goal-1000.webp 1000w, assets/shots/04-path-to-goal.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="" width="1424" height="861" loading="lazy"></figure><figure class="pframe" data-frame="1"><img class="shot shot--desk " src="assets/shots/02-team.png" srcset="assets/shots/02-team-720.webp 720w, assets/shots/02-team-1000.webp 1000w, assets/shots/02-team.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="" width="1424" height="861" loading="lazy"></figure><figure class="pframe pframe--phone" data-frame="2"><img class="shot shot--phone " src="assets/shots/phone-02-team.png" srcset="assets/shots/phone-02-team-260.webp 260w, assets/shots/phone-02-team.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="" width="384" height="821" loading="lazy"></figure><figure class="pframe pframe--phone" data-frame="3"><img class="shot shot--phone " src="assets/shots/phone-01-today.png" srcset="assets/shots/phone-01-today-260.webp 260w, assets/shots/phone-01-today.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="" width="384" height="821" loading="lazy"></figure><figure class="pframe" data-frame="4"><img class="shot shot--desk " src="assets/shots/03-person.png" srcset="assets/shots/03-person-720.webp 720w, assets/shots/03-person-1000.webp 1000w, assets/shots/03-person.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="" width="1424" height="861" loading="lazy"></figure></div>
+        <h3>مسیر تا هدف</h3><p>هر پروژه یه <strong>هدف</strong> و <strong>ددلاین</strong> داره؛ کارها <strong>مرحله‌به‌مرحله</strong> و پشت هم. <strong>خط نارنجی</strong> مسیر اصلیه، و لانه می‌گه با این سرعت پروژه <strong>کِی تموم می‌شه</strong>.</p>
+        <div class="pstep-shot"><div class="plan-live" role="region" aria-label="پیش‌نمایش زنده مسیر تا هدف پروژه لانچ اپ سفارش آنلاین">
+  <div class="plan-topbar">
+    <div class="plan-meta">
+      <span class="plan-app-ic" aria-hidden="true"><svg viewBox="0 0 24 24" class="ic"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09zM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.95 11a22.35 22.35 0 0 1-6.05 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <div class="plan-titles">
+        <span class="plan-crumb">استودیو نارنج › لانچ اپ سفارش آنلاین</span>
+        <strong class="plan-name">لانچ اپ سفارش آنلاین</strong>
+      </div>
     </div>
-    <p class="privacy"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>حریم خصوصی تیم</b> عضو و مهمان <strong>فقط می‌بینن کی توی تیمه و نقشش چیه.</strong></span></p>
+    <div class="plan-controls">
+      <span class="plan-pill"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor"/></svg>مسیر تا هدف</span>
+      <span class="plan-badge">۴ کار هم‌زمان</span>
+    </div>
+  </div>
+
+  <div class="plan-layout">
+    <div class="plan-pace">
+      <div class="plan-pace-head">
+        <svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>پیشرفت برنامه</span>
+      </div>
+      <div class="pace-ring-box">
+        <svg class="pace-svg" viewBox="0 0 100 100" width="100" height="100" aria-label="حلقه‌های پیشرفت: ۴۷٪ زمان گذشته، ۳۸٪ کار انجام شده">
+          <circle class="pace-track pace-track--outer" cx="50" cy="50" r="42" fill="none" stroke-width="6"/>
+          <circle class="pace-ring pace-ring--time" cx="50" cy="50" r="42" fill="none" stroke-width="6" stroke-linecap="round" pathLength="100"/>
+          <circle class="pace-track pace-track--inner" cx="50" cy="50" r="31" fill="none" stroke-width="8"/>
+          <circle class="pace-ring pace-ring--work" cx="50" cy="50" r="31" fill="none" stroke-width="8" stroke-linecap="round" pathLength="100"/>
+        </svg>
+        <span class="pace-pct">۳۸٪</span>
+      </div>
+      <p class="pace-count">۵ از ۱۳ کار انجام شده</p>
+      <div class="pace-bars">
+        <div class="pace-bar-row">
+          <span class="pace-bar-label">کار انجام شده</span>
+          <span class="pace-bar-val">۳۸٪</span>
+        </div>
+        <div class="pace-bar-track"><div class="pace-bar-fill pace-bar-fill--work" style="--p: 38%"></div></div>
+        <div class="pace-bar-row">
+          <span class="pace-bar-label">زمان گذشته</span>
+          <span class="pace-bar-val">۴۷٪</span>
+        </div>
+        <div class="pace-bar-track"><div class="pace-bar-fill pace-bar-fill--time" style="--p: 47%"></div></div>
+      </div>
+      <div class="pace-chips">
+        <span class="pace-chip pace-chip--behind">۴ روز عقب</span>
+        <span class="pace-deadline">ددلاین ۱۳ آذر</span>
+      </div>
+      <p class="pace-forecast">با این سرعت: ۲۷ آذر (۱۴ روز دیر)</p>
+    </div>
+
+    <div class="plan-board">
+      <div class="plan-proposal is-jiggling" tabindex="0">
+        <div class="proposal-main">
+          <img class="avatar" src="assets/people/maryam_h.jpg" alt="مریم حسینی" width="22" height="22">
+          <span class="proposal-title">حالت آفلاین برای منو</span>
+          <span class="proposal-sub">بعد از «اتصال صفحه‌ها به API»</span>
+        </div>
+        <div class="proposal-meta">
+          <span class="proposal-waiting">منتظر تأیید مدیر</span>
+          <div class="proposal-btns" aria-hidden="true">
+            <span class="pbtn pbtn--check"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="pbtn pbtn--edit"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="pbtn pbtn--drop"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-scroller" tabindex="0" aria-label="طرح گراف مسیر کارها: پیمایش افقی">
+        <div class="flow-stage">
+          <svg class="flow-svg" viewBox="0 0 760 230" width="760" height="230" aria-hidden="true">
+            <g class="flow-links">
+              <!-- Stage 0 outgoing from Start (700, 115) -->
+              <path class="flow-edge flow-edge--done-faint" data-stage="0" d="M 700 115 C 685 115, 685 75, 670 75"/>
+              <path class="flow-edge flow-edge--done-faint" data-stage="0" d="M 700 115 C 685 115, 685 165, 670 165"/>
+              <!-- Stage 1 outgoing from Done cards (540, 75) & (540, 165) -->
+              <path class="flow-edge flow-edge--done-faint" data-stage="1" d="M 540 75 L 515 75"/>
+              <path class="flow-edge flow-edge--done" data-stage="1" d="M 540 75 C 527.5 75, 527.5 155, 515 155"/>
+              <path class="flow-edge flow-edge--done" data-stage="1" d="M 540 165 C 527.5 165, 527.5 175, 515 175"/>
+              <!-- Stage 2 outgoing from (385, 75) & (385, 165) -->
+              <path class="flow-edge flow-edge--done" data-stage="2" d="M 385 75 C 375 75, 375 45, 365 45"/>
+              <path class="flow-edge flow-edge--done" data-stage="2" d="M 385 75 C 375 75, 375 115, 365 115"/>
+              <path class="flow-edge flow-edge--done" data-stage="2" d="M 385 75 C 375 75, 375 175, 365 175"/>
+              <!-- MAIN PATH 1: pay -> api connect -->
+              <path class="flow-edge flow-edge--main" data-stage="2" d="M 385 165 C 375 165, 375 195, 365 195"/>
+              <!-- Stage 3 outgoing from (225, 45), (225, 115), (225, 185) -->
+              <path class="flow-edge flow-edge--wait" data-stage="3" d="M 225 45 C 217.5 45, 217.5 65, 210 65"/>
+              <path class="flow-edge flow-edge--wait" data-stage="3" d="M 225 115 C 217.5 115, 217.5 85, 210 85"/>
+              <!-- MAIN PATH 2: api connect -> 20 users test -->
+              <path class="flow-edge flow-edge--main" data-stage="3" d="M 225 185 C 217.5 185, 217.5 165, 210 165"/>
+              <!-- Stage 4 outgoing to Goal (54, 115/125) -->
+              <path class="flow-edge flow-edge--wait" data-stage="4" d="M 70 75 C 62 75, 62 115, 54 115"/>
+              <!-- MAIN PATH 3: 20 users test -> Goal -->
+              <path class="flow-edge flow-edge--main" data-stage="4" d="M 70 165 C 62 165, 62 125, 54 125"/>
+            </g>
+            <g class="flow-dashes" aria-hidden="true">
+              <path class="flow-dash" d="M 385 165 C 375 165, 375 195, 365 195"/>
+              <path class="flow-dash" d="M 225 185 C 217.5 185, 217.5 165, 210 165"/>
+              <path class="flow-dash" d="M 70 165 C 62 165, 62 125, 54 125"/>
+            </g>
+          </svg>
+
+          <!-- Stage Column Headers -->
+          <div class="col-head col-head--1" style="--cx: 605px;">تموم شد</div>
+          <div class="col-head col-head--2" style="--cx: 450px;">مرحله ۳</div>
+          <div class="col-head col-head--3" style="--cx: 295px;">مرحله ۴</div>
+          <div class="col-head col-head--4" style="--cx: 140px;">مرحله ۵</div>
+
+          <!-- Start Node -->
+          <div class="node-endpoint node-endpoint--start" style="--x: 715px; --y: 115px;">
+            <div class="endpoint-circle"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor"/></svg></div>
+            <span class="endpoint-label">شروع</span>
+          </div>
+
+          <!-- Goal Node -->
+          <div class="node-endpoint node-endpoint--goal" style="--x: 32px; --y: 120px;">
+            <div class="endpoint-circle endpoint-circle--goal"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <span class="endpoint-label endpoint-label--goal">هدف</span>
+          </div>
+
+          <!-- Stage 1 Nodes -->
+          <div class="task-node task-node--done" data-stage="1" style="--x: 540px; --y: 50px; --w: 130px; --h: 50px;">
+            <span class="node-check node-check--done" aria-hidden="true"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div class="node-body">
+              <span class="node-title">سفر کاربر و وایرفریم</span>
+              <div class="node-meta">
+                <span class="node-date">۷ آبان</span>
+                <img class="avatar" src="assets/people/negar_ui.jpg" alt="نگار احمدی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <div class="task-node task-node--done" data-stage="1" style="--x: 540px; --y: 140px; --w: 130px; --h: 50px;">
+            <span class="node-check node-check--done" aria-hidden="true"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div class="node-body">
+              <span class="node-title">طراحی API سفارش</span>
+              <div class="node-meta">
+                <span class="node-date">۹ آبان</span>
+                <img class="avatar" src="assets/people/reza_dev.jpg" alt="رضا کریمی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 2 Nodes -->
+          <div class="task-node task-node--done" data-stage="2" style="--x: 385px; --y: 50px; --w: 130px; --h: 50px;">
+            <span class="node-check node-check--done" aria-hidden="true"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div class="node-body">
+              <span class="node-title">طراحی نهایی صفحه‌ها</span>
+              <div class="node-meta">
+                <span class="node-date">۱۷ آبان</span>
+                <img class="avatar" src="assets/people/negar_ui.jpg" alt="نگار احمدی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <div class="task-node task-node--main" data-stage="2" style="--x: 385px; --y: 140px; --w: 130px; --h: 50px;">
+            <span class="node-check node-check--open" aria-hidden="true"></span>
+            <div class="node-body">
+              <span class="node-title">پیاده‌سازی پرداخت</span>
+              <div class="node-meta">
+                <span class="node-date">۱۷ آبان</span>
+                <img class="avatar" src="assets/people/reza_dev.jpg" alt="رضا کریمی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 3 Nodes -->
+          <div class="task-node task-node--now is-jiggling" data-stage="3" style="--x: 225px; --y: 21px; --w: 140px; --h: 48px;">
+            <span class="node-check node-check--now" aria-hidden="true">!</span>
+            <div class="node-body">
+              <span class="node-title">بازبینی طراحی نهایی</span>
+              <div class="node-meta">
+                <span class="node-date">۱۹ آبان</span>
+                <span class="node-user-chip">تو</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="task-node" data-stage="3" style="--x: 225px; --y: 91px; --w: 140px; --h: 48px;">
+            <span class="node-check node-check--open" aria-hidden="true"></span>
+            <div class="node-body">
+              <span class="node-title">آیکن و صفحهٔ شروع</span>
+              <div class="node-meta">
+                <span class="node-date">۲۴ آبان</span>
+                <img class="avatar" src="assets/people/ali_mkt.jpg" alt="علی موسوی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <div class="task-node task-node--main" data-stage="3" style="--x: 225px; --y: 161px; --w: 140px; --h: 48px;">
+            <span class="node-check node-check--open" aria-hidden="true"></span>
+            <div class="node-body">
+              <span class="node-title">اتصال صفحه‌ها به API</span>
+              <div class="node-meta">
+                <span class="node-date">۲۲ آبان</span>
+                <img class="avatar" src="assets/people/maryam_h.jpg" alt="مریم حسینی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 4 Nodes -->
+          <div class="task-node" data-stage="4" style="--x: 70px; --y: 50px; --w: 140px; --h: 50px;">
+            <span class="node-check node-check--open" aria-hidden="true"></span>
+            <div class="node-body">
+              <span class="node-title">متن و اسکرین‌شات بازار</span>
+              <div class="node-meta">
+                <span class="node-date">۲ آذر</span>
+                <img class="avatar" src="assets/people/sara_rz.jpg" alt="سارا رضایی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <div class="task-node task-node--main" data-stage="4" style="--x: 70px; --y: 140px; --w: 140px; --h: 50px;">
+            <span class="node-check node-check--open" aria-hidden="true"></span>
+            <div class="node-body">
+              <span class="node-title">تست با ۲۰ کاربر</span>
+              <div class="node-meta">
+                <span class="node-date">۲۹ آبان</span>
+                <img class="avatar" src="assets/people/maryam_h.jpg" alt="مریم حسینی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-legend" aria-label="راهنمای مسیر">
+        <span class="legend-item"><span class="legend-line legend-line--main"></span>مسیر اصلی: این دیر بشه، کل برنامه دیر میشه</span>
+        <span class="legend-item"><span class="legend-line legend-line--wait"></span>منتظر</span>
+        <span class="legend-item"><span class="legend-line legend-line--lock"></span>قفل تا تموم بشه</span>
+      </div>
+    </div>
+  </div>
+</div></div></li><li class="pstep" data-step="1">
+        <h3>نقش‌ها</h3><p>مالک، مدیر، عضو، مهمان. <strong>عضو کار پیشنهاد می‌ده و مدیر تأیید می‌کنه.</strong></p>
+        <div class="pstep-shot"><div class="live-ui live-roles" role="img" aria-label="اعضای استودیو نارنج با نقش‌هاشون: مالک، مدیر، عضو، مهمان">
+  <div class="lr-top"><strong>اعضای «استودیو نارنج»</strong><span class="lr-invite">+ دعوت</span></div>
+  <div class="lr-stats"><div><b>۶</b><small>نفر</small></div><div><b>۱۲</b><small>کار باز</small></div><div><b class="bad">۱</b><small>دیرشده</small></div><div><b class="ok">۲</b><small>تموم این هفته</small></div></div>
+  <ul class="lr-list"><li style="--i:0"><span class="lr-av"><span class="av-letter">ا</span><i class="lp-dot"></i></span>
+    <div><b>امیرحسین <small class="inl">(تو)</small></b><span class="lr-meta"><small>مدیر محصول</small></span></div>
+    <span class="role role--owner">مالک</span>
+    </li><li style="--i:1"><span class="lr-av"><img src="assets/people/sara_rz.jpg" alt="" width="40" height="40"><i class="lp-dot"></i></span>
+    <div><b>سارا رضایی</b><span class="lr-meta"><small>طراح محصول</small><small dir="ltr">@sara_rz</small></span></div>
+    <span class="role role--admin">مدیر ▾</span>
+    </li><li style="--i:2"><span class="lr-av"><img src="assets/people/reza_dev.jpg" alt="" width="40" height="40"></span>
+    <div><b>رضا کریمی</b><span class="lr-meta"><small>بک‌اند</small><small dir="ltr">@reza_dev</small></span></div>
+    <span class="role role--member is-open">عضو ▾</span>
+    <span class="role-menu"><span>مدیر</span><span class="is-on">عضو</span><span>مهمان</span></span></li><li style="--i:3"><span class="lr-av"><img src="assets/people/negar_ui.jpg" alt="" width="40" height="40"><i class="lp-dot"></i></span>
+    <div><b>نگار احمدی</b><span class="lr-meta"><small>فرانت‌اند</small><small dir="ltr">@negar_ui</small></span></div>
+    <span class="role role--member">عضو ▾</span>
+    </li><li style="--i:4"><span class="lr-av"><img src="assets/people/ali_mkt.jpg" alt="" width="40" height="40"></span>
+    <div><b>علی موسوی</b><span class="lr-meta"><small>مارکتینگ</small><small dir="ltr">@ali_mkt</small></span></div>
+    <span class="role role--member">عضو ▾</span>
+    </li><li style="--i:5"><span class="lr-av"><img src="assets/people/maryam_h.jpg" alt="" width="40" height="40"></span>
+    <div><b>مریم حسینی</b><span class="lr-meta"><small>مشتری</small><small dir="ltr">@maryam_h</small></span></div>
+    <span class="role role--guest">مهمان ▾</span>
+    </li></ul>
+  <p class="lr-rule"><b>عضو</b> کار پیشنهاد می‌ده و <b>مدیر</b> تأیید می‌کنه.</p>
+</div></div></li><li class="pstep" data-step="2">
+        <h3>دعوت</h3><p>با <strong>ایمیل</strong>، <strong>آیدی لانه</strong> یا <strong>لینک</strong>. کسی که با لینک میاد، اول <strong>منتظر تأیید مدیر</strong> می‌مونه.</p>
+        <div class="pstep-shot"><div class="live-ui live-invite" role="img" aria-label="دعوت با ایمیل، آیدی لانه یا لینک؛ کسی که با لینک میاد منتظر تأیید مدیر می‌مونه">
+  <strong class="li-title">دعوت به «استودیو نارنج»</strong>
+  <div class="cal-seg li-tabs"><span>ایمیل</span><span class="is-on">آیدی لانه</span><span>لینک</span></div>
+  <div class="li-field" dir="ltr"><span class="li-typed">@ali_mkt</span><span class="li-caret"></span></div>
+  <div class="li-found"><span class="lr-av"><img src="assets/people/ali_mkt.jpg" alt="" width="40" height="40"></span><div><b>علی موسوی</b><small>مارکتینگ</small></div><span class="lr-invite">دعوت</span></div>
+  <p class="lp-h">درخواست‌های پیوستن (۱)</p>
+  <div class="li-req is-waiting"><span class="lr-av"><img src="assets/people/maryam_h.jpg" alt="" width="40" height="40"></span><div><b>مریم حسینی</b><small>با لینک اومده و منتظر تأیید مدیره</small></div>
+    <span class="li-btns"><span class="pbtn pbtn--check">✓</span><span class="pbtn pbtn--drop">✕</span></span></div>
+</div></div></li><li class="pstep" data-step="3">
+        <h3>دادن کار و خبرها</h3><p>کار رو بده به هم‌تیمی. خبرها: <strong>«کار داد»</strong>، <strong>«منتظرتم»</strong>، <strong>«تموم شد، نوبتته»</strong>. کاری که کسی منتظرشه، یه <strong>لرزش کوچیک</strong> می‌خوره تا یادت نره.</p>
+        <div class="pstep-shot"><div class="live-ui live-assign" role="img" aria-label="خبرهای لانه: کار داد، منتظرتم، و تموم شد نوبتته؛ کاری که کسی منتظرشه می‌لرزه">
+  <ol class="la-feed">
+    <li class="la-note la-note--turn" style="--n:2"><span class="lr-av"><img src="assets/people/sara_rz.jpg" alt="" width="40" height="40"></span><div>
+      <span class="la-kind">تموم شد، نوبتته</span><b>سارا رضایی تمومش کرد؛ نوبت توئه</b><small>«طراحی نهایی صفحه‌ها»</small>
+      <span class="la-btns"><span class="lr-invite">بازش کن</span><span class="la-ghost">متوجه شدم</span></span></div></li>
+    <li class="la-note la-note--wait" style="--n:1"><span class="lr-av"><img src="assets/people/reza_dev.jpg" alt="" width="40" height="40"></span><div>
+      <span class="la-kind">منتظرتم</span><b>رضا کریمی منتظرته</b><small>«بازبینی طراحی نهایی»</small></div></li>
+    <li class="la-note" style="--n:0"><span class="lr-av"><img src="assets/people/sara_rz.jpg" alt="" width="40" height="40"></span><div>
+      <span class="la-kind">کار داد</span><b>سارا رضایی بهت کار داد</b><small>«بازبینی طراحی نهایی»</small></div></li>
+  </ol>
+  <div class="la-task"><span class="ring"></span><div><b>بازبینی طراحی نهایی</b><small>لانچ اپ سفارش آنلاین</small></div>
+    <span class="la-waiter"><span class="lr-av"><img src="assets/people/reza_dev.jpg" alt="" width="40" height="40"></span><small>منتظرته</small></span></div>
+</div></div></li><li class="pstep" data-step="4">
+        <h3>تقویم کاری تیم</h3><p><strong>هفته</strong>، <strong>ماه</strong> و <strong>سال</strong>؛ <strong>شمسی</strong>، <strong>میلادی</strong> یا هر دو کنار هم.</p>
+        <div class="pstep-shot"><div class="live-ui live-cal" role="img" aria-label="تقویم کاری تیم استودیو نارنج، آبان ۱۴۰۵، نمای ماه">
+  <div class="cal-top"><div><span class="cal-crumb">فضای کار</span><strong class="cal-title">تقویم کاری</strong></div>
+    <div class="cal-seg" aria-hidden="true"><span>هفته</span><span class="is-on">ماه</span><span>سال</span></div></div>
+  <div class="cal-body">
+    <div class="cal-month"><div class="cal-nav"><strong>آبان ۱۴۰۵</strong><span class="cal-todaybtn">امروز</span></div>
+      <div class="cal-grid"><span class="cal-dow"><span class="dow-full">شنبه</span><span class="dow-short" aria-hidden="true">ش</span></span><span class="cal-dow"><span class="dow-full">یکشنبه</span><span class="dow-short" aria-hidden="true">ی</span></span><span class="cal-dow"><span class="dow-full">دوشنبه</span><span class="dow-short" aria-hidden="true">د</span></span><span class="cal-dow"><span class="dow-full">سه‌شنبه</span><span class="dow-short" aria-hidden="true">س</span></span><span class="cal-dow"><span class="dow-full">چهارشنبه</span><span class="dow-short" aria-hidden="true">چ</span></span><span class="cal-dow"><span class="dow-full">پنجشنبه</span><span class="dow-short" aria-hidden="true">پ</span></span><span class="cal-dow"><span class="dow-full">جمعه</span><span class="dow-short" aria-hidden="true">ج</span></span><div class="cal-cell cal-cell--empty"></div><div class="cal-cell cal-cell--empty"></div><div class="cal-cell cal-cell--empty"></div><div class="cal-cell cal-cell--empty"></div><div class="cal-cell cal-cell--empty"></div><div class="cal-cell cal-cell--empty"></div><div class="cal-cell" style="--d:0"><span class="cal-day is-fri">۱</span><span class="cal-chip done">مصاحبه با ۸ کاربر</span></div><div class="cal-cell" style="--d:1"><span class="cal-day">۲</span><span class="cal-chip done">بررسی ۵ اپ رقیب</span></div><div class="cal-cell" style="--d:2"><span class="cal-day">۳</span></div><div class="cal-cell" style="--d:3"><span class="cal-day">۴</span></div><div class="cal-cell" style="--d:4"><span class="cal-day">۵</span></div><div class="cal-cell" style="--d:5"><span class="cal-day">۶</span></div><div class="cal-cell" style="--d:6"><span class="cal-day">۷</span><span class="cal-chip done">سفر کاربر و وایرفریم</span></div><div class="cal-cell" style="--d:7"><span class="cal-day is-fri">۸</span></div><div class="cal-cell" style="--d:8"><span class="cal-day">۹</span><span class="cal-chip done">طراحی API سفارش</span></div><div class="cal-cell" style="--d:9"><span class="cal-day">۱۰</span></div><div class="cal-cell" style="--d:10"><span class="cal-day">۱۱</span></div><div class="cal-cell" style="--d:11"><span class="cal-day">۱۲</span></div><div class="cal-cell" style="--d:12"><span class="cal-day">۱۳</span></div><div class="cal-cell" style="--d:13"><span class="cal-day">۱۴</span></div><div class="cal-cell" style="--d:14"><span class="cal-day is-fri">۱۵</span></div><div class="cal-cell" style="--d:15"><span class="cal-day">۱۶</span><span class="cal-chip done b">تقویم محتوای ۴…</span></div><div class="cal-cell" style="--d:16"><span class="cal-day">۱۷</span><span class="cal-chip ">پیاده‌سازی پرداخت</span><span class="cal-chip done">طراحی نهایی صفحه‌ها</span></div><div class="cal-cell" style="--d:17"><span class="cal-day">۱۸</span></div><div class="cal-cell is-today" style="--d:18"><span class="cal-day">۱۹</span><span class="cal-chip ">بازبینی طراحی نهایی</span><span class="cal-chip g">جلسهٔ هفتگی تیم</span></div><div class="cal-cell" style="--d:19"><span class="cal-day">۲۰</span></div><div class="cal-cell" style="--d:20"><span class="cal-day">۲۱</span></div><div class="cal-cell" style="--d:21"><span class="cal-day is-fri">۲۲</span><span class="cal-chip ">اتصال صفحه‌ها به API</span></div><div class="cal-cell" style="--d:22"><span class="cal-day">۲۳</span></div><div class="cal-cell" style="--d:23"><span class="cal-day">۲۴</span><span class="cal-chip ">آیکن و صفحهٔ شروع</span></div><div class="cal-cell" style="--d:24"><span class="cal-day">۲۵</span><span class="cal-chip b">۶ پست و ۲ ریلز</span></div><div class="cal-cell" style="--d:25"><span class="cal-day">۲۶</span><span class="cal-chip p">نقشهٔ صفحه‌ها و…</span></div><div class="cal-cell" style="--d:26"><span class="cal-day">۲۷</span><span class="cal-chip b">صفحهٔ فرود کمپین</span></div><div class="cal-cell" style="--d:27"><span class="cal-day">۲۸</span></div><div class="cal-cell" style="--d:28"><span class="cal-day is-fri">۲۹</span><span class="cal-chip ">تست با ۲۰ کاربر</span></div><div class="cal-cell" style="--d:29"><span class="cal-day">۳۰</span></div></div></div>
+    <aside class="cal-side">
+      <div class="cal-dayc"><div class="cal-dayh"><strong>سه‌شنبه ۱۹ آبان</strong><span>۰ از ۲ کار</span></div>
+        <div class="cal-task"><span class="ring"></span><div><b>بازبینی طراحی نهایی</b><small>لانچ اپ سفارش آنلاین</small></div></div>
+        <div class="cal-task"><span class="ring"></span><div><b>جلسهٔ هفتگی تیم</b></div></div>
+        <p class="cal-hint">کار رو بکش روی یه روز دیگهٔ ماه تا جابه‌جا بشه.</p></div>
+      <div class="cal-stats"><div><small>کار این ماه</small><b class="count" data-to="15">۱۵</b></div><div><small>انجام شده</small><b class="count" data-to="6">۶</b></div><div><small>روز سنگین</small><b>۰</b></div></div>
+    </aside>
+  </div>
+</div></div></li></ol>
+      <div class="pinned-stage" aria-hidden="true"><figure class="pframe is-on pframe--live" data-frame="0" data-cam="live"><div class="pframe-viewport"><div class="plan-live" role="region" aria-label="پیش‌نمایش زنده مسیر تا هدف پروژه لانچ اپ سفارش آنلاین">
+  <div class="plan-topbar">
+    <div class="plan-meta">
+      <span class="plan-app-ic" aria-hidden="true"><svg viewBox="0 0 24 24" class="ic"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09zM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.95 11a22.35 22.35 0 0 1-6.05 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <div class="plan-titles">
+        <span class="plan-crumb">استودیو نارنج › لانچ اپ سفارش آنلاین</span>
+        <strong class="plan-name">لانچ اپ سفارش آنلاین</strong>
+      </div>
+    </div>
+    <div class="plan-controls">
+      <span class="plan-pill"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor"/></svg>مسیر تا هدف</span>
+      <span class="plan-badge">۴ کار هم‌زمان</span>
+    </div>
+  </div>
+
+  <div class="plan-layout">
+    <div class="plan-pace">
+      <div class="plan-pace-head">
+        <svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>پیشرفت برنامه</span>
+      </div>
+      <div class="pace-ring-box">
+        <svg class="pace-svg" viewBox="0 0 100 100" width="100" height="100" aria-label="حلقه‌های پیشرفت: ۴۷٪ زمان گذشته، ۳۸٪ کار انجام شده">
+          <circle class="pace-track pace-track--outer" cx="50" cy="50" r="42" fill="none" stroke-width="6"/>
+          <circle class="pace-ring pace-ring--time" cx="50" cy="50" r="42" fill="none" stroke-width="6" stroke-linecap="round" pathLength="100"/>
+          <circle class="pace-track pace-track--inner" cx="50" cy="50" r="31" fill="none" stroke-width="8"/>
+          <circle class="pace-ring pace-ring--work" cx="50" cy="50" r="31" fill="none" stroke-width="8" stroke-linecap="round" pathLength="100"/>
+        </svg>
+        <span class="pace-pct">۳۸٪</span>
+      </div>
+      <p class="pace-count">۵ از ۱۳ کار انجام شده</p>
+      <div class="pace-bars">
+        <div class="pace-bar-row">
+          <span class="pace-bar-label">کار انجام شده</span>
+          <span class="pace-bar-val">۳۸٪</span>
+        </div>
+        <div class="pace-bar-track"><div class="pace-bar-fill pace-bar-fill--work" style="--p: 38%"></div></div>
+        <div class="pace-bar-row">
+          <span class="pace-bar-label">زمان گذشته</span>
+          <span class="pace-bar-val">۴۷٪</span>
+        </div>
+        <div class="pace-bar-track"><div class="pace-bar-fill pace-bar-fill--time" style="--p: 47%"></div></div>
+      </div>
+      <div class="pace-chips">
+        <span class="pace-chip pace-chip--behind">۴ روز عقب</span>
+        <span class="pace-deadline">ددلاین ۱۳ آذر</span>
+      </div>
+      <p class="pace-forecast">با این سرعت: ۲۷ آذر (۱۴ روز دیر)</p>
+    </div>
+
+    <div class="plan-board">
+      <div class="plan-proposal is-jiggling" tabindex="0">
+        <div class="proposal-main">
+          <img class="avatar" src="assets/people/maryam_h.jpg" alt="مریم حسینی" width="22" height="22">
+          <span class="proposal-title">حالت آفلاین برای منو</span>
+          <span class="proposal-sub">بعد از «اتصال صفحه‌ها به API»</span>
+        </div>
+        <div class="proposal-meta">
+          <span class="proposal-waiting">منتظر تأیید مدیر</span>
+          <div class="proposal-btns" aria-hidden="true">
+            <span class="pbtn pbtn--check"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="pbtn pbtn--edit"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="pbtn pbtn--drop"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-scroller" tabindex="0" aria-label="طرح گراف مسیر کارها: پیمایش افقی">
+        <div class="flow-stage">
+          <svg class="flow-svg" viewBox="0 0 760 230" width="760" height="230" aria-hidden="true">
+            <g class="flow-links">
+              <!-- Stage 0 outgoing from Start (700, 115) -->
+              <path class="flow-edge flow-edge--done-faint" data-stage="0" d="M 700 115 C 685 115, 685 75, 670 75"/>
+              <path class="flow-edge flow-edge--done-faint" data-stage="0" d="M 700 115 C 685 115, 685 165, 670 165"/>
+              <!-- Stage 1 outgoing from Done cards (540, 75) & (540, 165) -->
+              <path class="flow-edge flow-edge--done-faint" data-stage="1" d="M 540 75 L 515 75"/>
+              <path class="flow-edge flow-edge--done" data-stage="1" d="M 540 75 C 527.5 75, 527.5 155, 515 155"/>
+              <path class="flow-edge flow-edge--done" data-stage="1" d="M 540 165 C 527.5 165, 527.5 175, 515 175"/>
+              <!-- Stage 2 outgoing from (385, 75) & (385, 165) -->
+              <path class="flow-edge flow-edge--done" data-stage="2" d="M 385 75 C 375 75, 375 45, 365 45"/>
+              <path class="flow-edge flow-edge--done" data-stage="2" d="M 385 75 C 375 75, 375 115, 365 115"/>
+              <path class="flow-edge flow-edge--done" data-stage="2" d="M 385 75 C 375 75, 375 175, 365 175"/>
+              <!-- MAIN PATH 1: pay -> api connect -->
+              <path class="flow-edge flow-edge--main" data-stage="2" d="M 385 165 C 375 165, 375 195, 365 195"/>
+              <!-- Stage 3 outgoing from (225, 45), (225, 115), (225, 185) -->
+              <path class="flow-edge flow-edge--wait" data-stage="3" d="M 225 45 C 217.5 45, 217.5 65, 210 65"/>
+              <path class="flow-edge flow-edge--wait" data-stage="3" d="M 225 115 C 217.5 115, 217.5 85, 210 85"/>
+              <!-- MAIN PATH 2: api connect -> 20 users test -->
+              <path class="flow-edge flow-edge--main" data-stage="3" d="M 225 185 C 217.5 185, 217.5 165, 210 165"/>
+              <!-- Stage 4 outgoing to Goal (54, 115/125) -->
+              <path class="flow-edge flow-edge--wait" data-stage="4" d="M 70 75 C 62 75, 62 115, 54 115"/>
+              <!-- MAIN PATH 3: 20 users test -> Goal -->
+              <path class="flow-edge flow-edge--main" data-stage="4" d="M 70 165 C 62 165, 62 125, 54 125"/>
+            </g>
+            <g class="flow-dashes" aria-hidden="true">
+              <path class="flow-dash" d="M 385 165 C 375 165, 375 195, 365 195"/>
+              <path class="flow-dash" d="M 225 185 C 217.5 185, 217.5 165, 210 165"/>
+              <path class="flow-dash" d="M 70 165 C 62 165, 62 125, 54 125"/>
+            </g>
+          </svg>
+
+          <!-- Stage Column Headers -->
+          <div class="col-head col-head--1" style="--cx: 605px;">تموم شد</div>
+          <div class="col-head col-head--2" style="--cx: 450px;">مرحله ۳</div>
+          <div class="col-head col-head--3" style="--cx: 295px;">مرحله ۴</div>
+          <div class="col-head col-head--4" style="--cx: 140px;">مرحله ۵</div>
+
+          <!-- Start Node -->
+          <div class="node-endpoint node-endpoint--start" style="--x: 715px; --y: 115px;">
+            <div class="endpoint-circle"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor"/></svg></div>
+            <span class="endpoint-label">شروع</span>
+          </div>
+
+          <!-- Goal Node -->
+          <div class="node-endpoint node-endpoint--goal" style="--x: 32px; --y: 120px;">
+            <div class="endpoint-circle endpoint-circle--goal"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <span class="endpoint-label endpoint-label--goal">هدف</span>
+          </div>
+
+          <!-- Stage 1 Nodes -->
+          <div class="task-node task-node--done" data-stage="1" style="--x: 540px; --y: 50px; --w: 130px; --h: 50px;">
+            <span class="node-check node-check--done" aria-hidden="true"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div class="node-body">
+              <span class="node-title">سفر کاربر و وایرفریم</span>
+              <div class="node-meta">
+                <span class="node-date">۷ آبان</span>
+                <img class="avatar" src="assets/people/negar_ui.jpg" alt="نگار احمدی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <div class="task-node task-node--done" data-stage="1" style="--x: 540px; --y: 140px; --w: 130px; --h: 50px;">
+            <span class="node-check node-check--done" aria-hidden="true"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div class="node-body">
+              <span class="node-title">طراحی API سفارش</span>
+              <div class="node-meta">
+                <span class="node-date">۹ آبان</span>
+                <img class="avatar" src="assets/people/reza_dev.jpg" alt="رضا کریمی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 2 Nodes -->
+          <div class="task-node task-node--done" data-stage="2" style="--x: 385px; --y: 50px; --w: 130px; --h: 50px;">
+            <span class="node-check node-check--done" aria-hidden="true"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div class="node-body">
+              <span class="node-title">طراحی نهایی صفحه‌ها</span>
+              <div class="node-meta">
+                <span class="node-date">۱۷ آبان</span>
+                <img class="avatar" src="assets/people/negar_ui.jpg" alt="نگار احمدی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <div class="task-node task-node--main" data-stage="2" style="--x: 385px; --y: 140px; --w: 130px; --h: 50px;">
+            <span class="node-check node-check--open" aria-hidden="true"></span>
+            <div class="node-body">
+              <span class="node-title">پیاده‌سازی پرداخت</span>
+              <div class="node-meta">
+                <span class="node-date">۱۷ آبان</span>
+                <img class="avatar" src="assets/people/reza_dev.jpg" alt="رضا کریمی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 3 Nodes -->
+          <div class="task-node task-node--now is-jiggling" data-stage="3" style="--x: 225px; --y: 21px; --w: 140px; --h: 48px;">
+            <span class="node-check node-check--now" aria-hidden="true">!</span>
+            <div class="node-body">
+              <span class="node-title">بازبینی طراحی نهایی</span>
+              <div class="node-meta">
+                <span class="node-date">۱۹ آبان</span>
+                <span class="node-user-chip">تو</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="task-node" data-stage="3" style="--x: 225px; --y: 91px; --w: 140px; --h: 48px;">
+            <span class="node-check node-check--open" aria-hidden="true"></span>
+            <div class="node-body">
+              <span class="node-title">آیکن و صفحهٔ شروع</span>
+              <div class="node-meta">
+                <span class="node-date">۲۴ آبان</span>
+                <img class="avatar" src="assets/people/ali_mkt.jpg" alt="علی موسوی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <div class="task-node task-node--main" data-stage="3" style="--x: 225px; --y: 161px; --w: 140px; --h: 48px;">
+            <span class="node-check node-check--open" aria-hidden="true"></span>
+            <div class="node-body">
+              <span class="node-title">اتصال صفحه‌ها به API</span>
+              <div class="node-meta">
+                <span class="node-date">۲۲ آبان</span>
+                <img class="avatar" src="assets/people/maryam_h.jpg" alt="مریم حسینی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 4 Nodes -->
+          <div class="task-node" data-stage="4" style="--x: 70px; --y: 50px; --w: 140px; --h: 50px;">
+            <span class="node-check node-check--open" aria-hidden="true"></span>
+            <div class="node-body">
+              <span class="node-title">متن و اسکرین‌شات بازار</span>
+              <div class="node-meta">
+                <span class="node-date">۲ آذر</span>
+                <img class="avatar" src="assets/people/sara_rz.jpg" alt="سارا رضایی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+
+          <div class="task-node task-node--main" data-stage="4" style="--x: 70px; --y: 140px; --w: 140px; --h: 50px;">
+            <span class="node-check node-check--open" aria-hidden="true"></span>
+            <div class="node-body">
+              <span class="node-title">تست با ۲۰ کاربر</span>
+              <div class="node-meta">
+                <span class="node-date">۲۹ آبان</span>
+                <img class="avatar" src="assets/people/maryam_h.jpg" alt="مریم حسینی" width="18" height="18">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-legend" aria-label="راهنمای مسیر">
+        <span class="legend-item"><span class="legend-line legend-line--main"></span>مسیر اصلی: این دیر بشه، کل برنامه دیر میشه</span>
+        <span class="legend-item"><span class="legend-line legend-line--wait"></span>منتظر</span>
+        <span class="legend-item"><span class="legend-line legend-line--lock"></span>قفل تا تموم بشه</span>
+      </div>
+    </div>
+  </div>
+</div></div></figure><figure class="pframe pframe--live" data-frame="1" data-cam="live"><div class="pframe-viewport"><div class="live-ui live-roles" role="img" aria-label="اعضای استودیو نارنج با نقش‌هاشون: مالک، مدیر، عضو، مهمان">
+  <div class="lr-top"><strong>اعضای «استودیو نارنج»</strong><span class="lr-invite">+ دعوت</span></div>
+  <div class="lr-stats"><div><b>۶</b><small>نفر</small></div><div><b>۱۲</b><small>کار باز</small></div><div><b class="bad">۱</b><small>دیرشده</small></div><div><b class="ok">۲</b><small>تموم این هفته</small></div></div>
+  <ul class="lr-list"><li style="--i:0"><span class="lr-av"><span class="av-letter">ا</span><i class="lp-dot"></i></span>
+    <div><b>امیرحسین <small class="inl">(تو)</small></b><span class="lr-meta"><small>مدیر محصول</small></span></div>
+    <span class="role role--owner">مالک</span>
+    </li><li style="--i:1"><span class="lr-av"><img src="assets/people/sara_rz.jpg" alt="" width="40" height="40"><i class="lp-dot"></i></span>
+    <div><b>سارا رضایی</b><span class="lr-meta"><small>طراح محصول</small><small dir="ltr">@sara_rz</small></span></div>
+    <span class="role role--admin">مدیر ▾</span>
+    </li><li style="--i:2"><span class="lr-av"><img src="assets/people/reza_dev.jpg" alt="" width="40" height="40"></span>
+    <div><b>رضا کریمی</b><span class="lr-meta"><small>بک‌اند</small><small dir="ltr">@reza_dev</small></span></div>
+    <span class="role role--member is-open">عضو ▾</span>
+    <span class="role-menu"><span>مدیر</span><span class="is-on">عضو</span><span>مهمان</span></span></li><li style="--i:3"><span class="lr-av"><img src="assets/people/negar_ui.jpg" alt="" width="40" height="40"><i class="lp-dot"></i></span>
+    <div><b>نگار احمدی</b><span class="lr-meta"><small>فرانت‌اند</small><small dir="ltr">@negar_ui</small></span></div>
+    <span class="role role--member">عضو ▾</span>
+    </li><li style="--i:4"><span class="lr-av"><img src="assets/people/ali_mkt.jpg" alt="" width="40" height="40"></span>
+    <div><b>علی موسوی</b><span class="lr-meta"><small>مارکتینگ</small><small dir="ltr">@ali_mkt</small></span></div>
+    <span class="role role--member">عضو ▾</span>
+    </li><li style="--i:5"><span class="lr-av"><img src="assets/people/maryam_h.jpg" alt="" width="40" height="40"></span>
+    <div><b>مریم حسینی</b><span class="lr-meta"><small>مشتری</small><small dir="ltr">@maryam_h</small></span></div>
+    <span class="role role--guest">مهمان ▾</span>
+    </li></ul>
+  <p class="lr-rule"><b>عضو</b> کار پیشنهاد می‌ده و <b>مدیر</b> تأیید می‌کنه.</p>
+</div></div></figure><figure class="pframe pframe--phone pframe--live" data-frame="2" data-cam="phone"><div class="pframe-viewport"><div class="live-ui live-invite" role="img" aria-label="دعوت با ایمیل، آیدی لانه یا لینک؛ کسی که با لینک میاد منتظر تأیید مدیر می‌مونه">
+  <strong class="li-title">دعوت به «استودیو نارنج»</strong>
+  <div class="cal-seg li-tabs"><span>ایمیل</span><span class="is-on">آیدی لانه</span><span>لینک</span></div>
+  <div class="li-field" dir="ltr"><span class="li-typed">@ali_mkt</span><span class="li-caret"></span></div>
+  <div class="li-found"><span class="lr-av"><img src="assets/people/ali_mkt.jpg" alt="" width="40" height="40"></span><div><b>علی موسوی</b><small>مارکتینگ</small></div><span class="lr-invite">دعوت</span></div>
+  <p class="lp-h">درخواست‌های پیوستن (۱)</p>
+  <div class="li-req is-waiting"><span class="lr-av"><img src="assets/people/maryam_h.jpg" alt="" width="40" height="40"></span><div><b>مریم حسینی</b><small>با لینک اومده و منتظر تأیید مدیره</small></div>
+    <span class="li-btns"><span class="pbtn pbtn--check">✓</span><span class="pbtn pbtn--drop">✕</span></span></div>
+</div></div></figure><figure class="pframe pframe--phone pframe--live" data-frame="3" data-cam="phone"><div class="pframe-viewport"><div class="live-ui live-assign" role="img" aria-label="خبرهای لانه: کار داد، منتظرتم، و تموم شد نوبتته؛ کاری که کسی منتظرشه می‌لرزه">
+  <ol class="la-feed">
+    <li class="la-note la-note--turn" style="--n:2"><span class="lr-av"><img src="assets/people/sara_rz.jpg" alt="" width="40" height="40"></span><div>
+      <span class="la-kind">تموم شد، نوبتته</span><b>سارا رضایی تمومش کرد؛ نوبت توئه</b><small>«طراحی نهایی صفحه‌ها»</small>
+      <span class="la-btns"><span class="lr-invite">بازش کن</span><span class="la-ghost">متوجه شدم</span></span></div></li>
+    <li class="la-note la-note--wait" style="--n:1"><span class="lr-av"><img src="assets/people/reza_dev.jpg" alt="" width="40" height="40"></span><div>
+      <span class="la-kind">منتظرتم</span><b>رضا کریمی منتظرته</b><small>«بازبینی طراحی نهایی»</small></div></li>
+    <li class="la-note" style="--n:0"><span class="lr-av"><img src="assets/people/sara_rz.jpg" alt="" width="40" height="40"></span><div>
+      <span class="la-kind">کار داد</span><b>سارا رضایی بهت کار داد</b><small>«بازبینی طراحی نهایی»</small></div></li>
+  </ol>
+  <div class="la-task"><span class="ring"></span><div><b>بازبینی طراحی نهایی</b><small>لانچ اپ سفارش آنلاین</small></div>
+    <span class="la-waiter"><span class="lr-av"><img src="assets/people/reza_dev.jpg" alt="" width="40" height="40"></span><small>منتظرته</small></span></div>
+</div></div></figure><figure class="pframe pframe--live" data-frame="4" data-cam="live"><div class="pframe-viewport"><div class="live-ui live-cal" role="img" aria-label="تقویم کاری تیم استودیو نارنج، آبان ۱۴۰۵، نمای ماه">
+  <div class="cal-top"><div><span class="cal-crumb">فضای کار</span><strong class="cal-title">تقویم کاری</strong></div>
+    <div class="cal-seg" aria-hidden="true"><span>هفته</span><span class="is-on">ماه</span><span>سال</span></div></div>
+  <div class="cal-body">
+    <div class="cal-month"><div class="cal-nav"><strong>آبان ۱۴۰۵</strong><span class="cal-todaybtn">امروز</span></div>
+      <div class="cal-grid"><span class="cal-dow"><span class="dow-full">شنبه</span><span class="dow-short" aria-hidden="true">ش</span></span><span class="cal-dow"><span class="dow-full">یکشنبه</span><span class="dow-short" aria-hidden="true">ی</span></span><span class="cal-dow"><span class="dow-full">دوشنبه</span><span class="dow-short" aria-hidden="true">د</span></span><span class="cal-dow"><span class="dow-full">سه‌شنبه</span><span class="dow-short" aria-hidden="true">س</span></span><span class="cal-dow"><span class="dow-full">چهارشنبه</span><span class="dow-short" aria-hidden="true">چ</span></span><span class="cal-dow"><span class="dow-full">پنجشنبه</span><span class="dow-short" aria-hidden="true">پ</span></span><span class="cal-dow"><span class="dow-full">جمعه</span><span class="dow-short" aria-hidden="true">ج</span></span><div class="cal-cell cal-cell--empty"></div><div class="cal-cell cal-cell--empty"></div><div class="cal-cell cal-cell--empty"></div><div class="cal-cell cal-cell--empty"></div><div class="cal-cell cal-cell--empty"></div><div class="cal-cell cal-cell--empty"></div><div class="cal-cell" style="--d:0"><span class="cal-day is-fri">۱</span><span class="cal-chip done">مصاحبه با ۸ کاربر</span></div><div class="cal-cell" style="--d:1"><span class="cal-day">۲</span><span class="cal-chip done">بررسی ۵ اپ رقیب</span></div><div class="cal-cell" style="--d:2"><span class="cal-day">۳</span></div><div class="cal-cell" style="--d:3"><span class="cal-day">۴</span></div><div class="cal-cell" style="--d:4"><span class="cal-day">۵</span></div><div class="cal-cell" style="--d:5"><span class="cal-day">۶</span></div><div class="cal-cell" style="--d:6"><span class="cal-day">۷</span><span class="cal-chip done">سفر کاربر و وایرفریم</span></div><div class="cal-cell" style="--d:7"><span class="cal-day is-fri">۸</span></div><div class="cal-cell" style="--d:8"><span class="cal-day">۹</span><span class="cal-chip done">طراحی API سفارش</span></div><div class="cal-cell" style="--d:9"><span class="cal-day">۱۰</span></div><div class="cal-cell" style="--d:10"><span class="cal-day">۱۱</span></div><div class="cal-cell" style="--d:11"><span class="cal-day">۱۲</span></div><div class="cal-cell" style="--d:12"><span class="cal-day">۱۳</span></div><div class="cal-cell" style="--d:13"><span class="cal-day">۱۴</span></div><div class="cal-cell" style="--d:14"><span class="cal-day is-fri">۱۵</span></div><div class="cal-cell" style="--d:15"><span class="cal-day">۱۶</span><span class="cal-chip done b">تقویم محتوای ۴…</span></div><div class="cal-cell" style="--d:16"><span class="cal-day">۱۷</span><span class="cal-chip ">پیاده‌سازی پرداخت</span><span class="cal-chip done">طراحی نهایی صفحه‌ها</span></div><div class="cal-cell" style="--d:17"><span class="cal-day">۱۸</span></div><div class="cal-cell is-today" style="--d:18"><span class="cal-day">۱۹</span><span class="cal-chip ">بازبینی طراحی نهایی</span><span class="cal-chip g">جلسهٔ هفتگی تیم</span></div><div class="cal-cell" style="--d:19"><span class="cal-day">۲۰</span></div><div class="cal-cell" style="--d:20"><span class="cal-day">۲۱</span></div><div class="cal-cell" style="--d:21"><span class="cal-day is-fri">۲۲</span><span class="cal-chip ">اتصال صفحه‌ها به API</span></div><div class="cal-cell" style="--d:22"><span class="cal-day">۲۳</span></div><div class="cal-cell" style="--d:23"><span class="cal-day">۲۴</span><span class="cal-chip ">آیکن و صفحهٔ شروع</span></div><div class="cal-cell" style="--d:24"><span class="cal-day">۲۵</span><span class="cal-chip b">۶ پست و ۲ ریلز</span></div><div class="cal-cell" style="--d:25"><span class="cal-day">۲۶</span><span class="cal-chip p">نقشهٔ صفحه‌ها و…</span></div><div class="cal-cell" style="--d:26"><span class="cal-day">۲۷</span><span class="cal-chip b">صفحهٔ فرود کمپین</span></div><div class="cal-cell" style="--d:27"><span class="cal-day">۲۸</span></div><div class="cal-cell" style="--d:28"><span class="cal-day is-fri">۲۹</span><span class="cal-chip ">تست با ۲۰ کاربر</span></div><div class="cal-cell" style="--d:29"><span class="cal-day">۳۰</span></div></div></div>
+    <aside class="cal-side">
+      <div class="cal-dayc"><div class="cal-dayh"><strong>سه‌شنبه ۱۹ آبان</strong><span>۰ از ۲ کار</span></div>
+        <div class="cal-task"><span class="ring"></span><div><b>بازبینی طراحی نهایی</b><small>لانچ اپ سفارش آنلاین</small></div></div>
+        <div class="cal-task"><span class="ring"></span><div><b>جلسهٔ هفتگی تیم</b></div></div>
+        <p class="cal-hint">کار رو بکش روی یه روز دیگهٔ ماه تا جابه‌جا بشه.</p></div>
+      <div class="cal-stats"><div><small>کار این ماه</small><b class="count" data-to="15">۱۵</b></div><div><small>انجام شده</small><b class="count" data-to="6">۶</b></div><div><small>روز سنگین</small><b>۰</b></div></div>
+    </aside>
+  </div>
+</div></div></figure></div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="teampage" id="team-page" aria-labelledby="tp-h">
+  <div class="container tp-grid">
+    <div class="tp-text"><h2 id="tp-h">صفحهٔ تیم؛ <span class="beat">نبض</span> کار بچه‌ها</h2><p class="sec-sub">کی آنلاینه، کی چقدر کار داره، چندتا دیر شده.</p>
+      <ul class="tp-points"><li><strong>کی آنلاینه</strong>، کی چقدر <strong>کار باز</strong> داره، چندتا <strong>دیر شده</strong>.</li><li>برای مدیرها، <strong>صفحهٔ هر نفر</strong>: کارهای انجام‌شده و مونده، معمولاً کی کار تموم می‌کنه، <strong>درصد به‌موقع</strong>، «منتظرتم»ها.</li><li><strong>دادن کار به یکی دیگه</strong>؛ به <strong>هر دو نفر</strong> خبر می‌ره.</li></ul>
+      <p class="privacy"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><b>حریم خصوصی تیم</b> عضو و مهمان <strong>فقط می‌بینن کی توی تیمه و نقشش چیه.</strong></span></p></div>
+    <figure class="tp-shot"><div class="live-ui live-person" role="img" aria-label="صفحهٔ سارا رضایی برای مدیر: یک کار باز، صفر دیرشده، سه انجام‌شده، ۶۷٪ به‌موقع">
+  <header class="lp-head"><span class="lp-av"><img src="assets/people/sara_rz.jpg" alt="" width="64" height="64"><i class="lp-dot"></i></span>
+    <div><strong>سارا رضایی</strong><small>طراح محصول، مدیر</small><em>آنلاین</em></div></header>
+  <div class="lp-stats">
+    <div><b class="count" data-to="1">۱</b><small>کار باز</small></div><div><b class="count" data-to="0">۰</b><small>دیرشده</small></div><div><b class="count ok" data-to="3">۳</b><small>انجام‌شده</small></div>
+    <div><b class="count" data-to="1">۱</b><small>گفته منتظرتم</small></div><div><b class="count" data-to="1">۱</b><small>منتظرش بودن</small></div><div><b class="count" data-to="67" data-pct>٪۶۷</b><small>به‌موقع</small></div>
+  </div>
+  <p class="lp-usual"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>معمولاً عصرها کار تموم می‌کنه، حدود ساعت ۱۶</p>
+  <p class="lp-h">انجام نداده (۱)</p>
+  <div class="lp-task"><span class="ring"></span><div><b>آیکن و صفحهٔ شروع</b><small>لانچ اپ سفارش آنلاین، تا ۲۴ آبان</small></div><span class="lp-give">دادن به یکی دیگه</span></div>
+  <p class="lp-h">انجام داده</p>
+  <div class="lp-task is-done" style="--i:0"><span class="ring"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>طراحی نهایی صفحه‌ها</b><small>لانچ اپ سفارش آنلاین، تموم شد ۱۸ آبان، ساعت ۱۶:۱۰</small></div></div><div class="lp-task is-done" style="--i:1"><span class="ring"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>سفر کاربر و وایرفریم</b><small>لانچ اپ سفارش آنلاین، تموم شد ۷ آبان، ساعت ۱۶:۴۵</small></div></div><div class="lp-task is-done" style="--i:2"><span class="ring"><svg viewBox="0 0 24 24" class="ic" aria-hidden="true"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>مصاحبه با ۸ کاربر</b><small>لانچ اپ سفارش آنلاین، تموم شد ۳۰ مهر، ساعت ۱۷:۲۰</small></div></div>
+</div></figure>
   </div>
 </section>
 
 <section class="claude" id="claude" aria-labelledby="claude-h">
   <div class="container">
-    <h2 id="claude-h">Claude، مدیر پروژهٔ تیمت</h2>
+    <h2 id="claude-h">هوش مصنوعی، مدیر پروژهٔ تیمت</h2><p class="sec-sub">لانه MCP داره؛ Claude، Codex یا هر دستیاری که MCP بلده، بهش وصل می‌شه.</p>
     <div class="claude-grid">
       <div class="map-wrap"><svg class="map" viewBox="0 0 960 560" role="img" aria-labelledby="map-t">
-  <title id="map-t">Claude با دسترسی تو به لانهٔ تیم وصل می‌شه، تحلیل و طراحی می‌کنه، قبل از هر تغییری می‌پرسه و آدم‌ها خبردار می‌شن.</title>
+  <title id="map-t">دستیار هوش مصنوعی از راه MCP با دسترسی تو به لانهٔ تیم وصل می‌شه، تحلیل و طراحی می‌کنه، قبل از هر تغییری می‌پرسه و آدم‌ها خبردار می‌شن.</title>
   <g class="map-edges">
-    <path d="M790 280 C 700 280, 640 280, 560 280"/>
-    <path d="M400 280 C 330 280, 310 120, 270 120"/><path d="M400 280 C 330 280, 310 200, 270 200"/><path d="M400 280 C 330 280, 310 280, 270 280"/><path d="M400 280 C 330 280, 310 360, 270 360"/><path d="M400 280 C 330 280, 310 440, 270 440"/>
-    <path d="M480 330 C 480 400, 480 420, 480 470"/>
+    <path class="edge" data-edge="you" pathLength="1" d="M790 280 C 700 280, 640 280, 560 280"/>
+    <path class="edge" data-edge="out-0" pathLength="1" d="M400 280 C 330 280, 310 120, 270 120"/><path class="edge" data-edge="out-1" pathLength="1" d="M400 280 C 330 280, 310 200, 270 200"/><path class="edge" data-edge="out-2" pathLength="1" d="M400 280 C 330 280, 310 280, 270 280"/><path class="edge" data-edge="out-3" pathLength="1" d="M400 280 C 330 280, 310 360, 270 360"/><path class="edge" data-edge="out-4" pathLength="1" d="M400 280 C 330 280, 310 440, 270 440"/>
+    <path class="edge" data-edge="ask" pathLength="1" d="M480 330 C 480 400, 480 420, 480 470"/>
   </g>
-  <g class="map-node map-node--you" data-node><rect x="790" y="244" width="140" height="72" rx="16"/><text x="860" y="276">تو</text><text class="map-sub" x="860" y="300">همون دسترسی</text></g>
-  <g class="map-node map-node--core" data-node><rect x="400" y="230" width="160" height="100" rx="20"/><text x="480" y="288">Claude</text></g>
-  <g class="map-node" data-node><rect x="10" y="94" width="260" height="52" rx="14"/><text x="140" y="126">گزارش هفتگی</text></g><g class="map-node" data-node><rect x="10" y="174" width="260" height="52" rx="14"/><text x="140" y="206">پیش‌بینی ددلاین</text></g><g class="map-node" data-node><rect x="10" y="254" width="260" height="52" rx="14"/><text x="140" y="286">گلوگاه‌ها</text></g><g class="map-node" data-node><rect x="10" y="334" width="260" height="52" rx="14"/><text x="140" y="366">کی سرش شلوغه و کی جا داره</text></g><g class="map-node" data-node><rect x="10" y="414" width="260" height="52" rx="14"/><text x="140" y="446">مسیر پروژه</text></g>
-  <g class="map-node map-node--ask" data-node><rect x="370" y="470" width="220" height="64" rx="16"/><text x="480" y="498">قبل از هر تغییری می‌پرسه</text><text class="map-sub" x="480" y="520">آدم‌ها خبردار می‌شن</text></g>
+  <g class="map-node map-node--you" data-node="you" tabindex="0"><rect x="790" y="244" width="140" height="72" rx="16"/><text x="860" y="276">تو</text><text class="map-sub" x="860" y="300">همون دسترسی</text></g>
+  <g class="map-node map-node--core" data-node="core" tabindex="0"><rect x="400" y="230" width="160" height="100" rx="20"/><text x="480" y="282">MCP</text><text class="map-sub" x="480" y="308">Claude، Codex و…</text></g>
+  <g class="map-node" data-node="out-0" tabindex="0"><rect x="10" y="94" width="260" height="52" rx="14"/><text x="140" y="126">گزارش هفتگی</text></g><g class="map-node" data-node="out-1" tabindex="0"><rect x="10" y="174" width="260" height="52" rx="14"/><text x="140" y="206">پیش‌بینی ددلاین</text></g><g class="map-node" data-node="out-2" tabindex="0"><rect x="10" y="254" width="260" height="52" rx="14"/><text x="140" y="286">گلوگاه‌ها</text></g><g class="map-node" data-node="out-3" tabindex="0"><rect x="10" y="334" width="260" height="52" rx="14"/><text x="140" y="366">کی سرش شلوغه و کی جا داره</text></g><g class="map-node" data-node="out-4" tabindex="0"><rect x="10" y="414" width="260" height="52" rx="14"/><text x="140" y="446">مسیر پروژه</text></g>
+  <g class="map-node map-node--ask" data-node="ask" tabindex="0"><rect x="370" y="470" width="220" height="64" rx="16"/><text x="480" y="498">قبل از هر تغییری می‌پرسه</text><text class="map-sub" x="480" y="520">آدم‌ها خبردار می‌شن</text></g>
 </svg></div>
-      <ul class="claude-points"><li>Claude به لانهٔ تیمت وصل می‌شه و <strong>دقیقاً همون دسترسی تو</strong> رو داره.</li><li>تیم رو <strong>تحلیل</strong> می‌کنه: گزارش هفتگی، پیش‌بینی اینکه پروژه <strong>به ددلاین می‌رسه یا نه</strong>، <strong>گلوگاه‌ها</strong>، اینکه کی سرش شلوغه و کی جا داره.</li><li>پروژه <strong>طراحی</strong> می‌کنه: مسیر رو با توجه به <strong>سمت و بار کاری</strong> هر نفر می‌چینه.</li><li><strong>قبل از هر تغییری می‌پرسه</strong>، و آدم‌ها خودکار خبردار می‌شن.</li></ul>
+      <ul class="claude-points"><li>دستیارت از راه <strong>MCP</strong> به لانهٔ تیمت وصل می‌شه و <strong>دقیقاً همون دسترسی تو</strong> رو داره.</li><li>تیم رو <strong>تحلیل</strong> می‌کنه: گزارش هفتگی، پیش‌بینی اینکه پروژه <strong>به ددلاین می‌رسه یا نه</strong>، <strong>گلوگاه‌ها</strong>، اینکه کی سرش شلوغه و کی جا داره.</li><li>پروژه <strong>طراحی</strong> می‌کنه: مسیر رو با توجه به <strong>سمت و بار کاری</strong> هر نفر می‌چینه.</li><li><strong>مدیریت</strong> می‌کنه: دعوت، نقش، دادن و جابه‌جا کردن کار.</li><li><strong>شفافه</strong>: توی صفحهٔ تیم معلومه کی Claude یا Codex وصل کرده، و کارهایی که هوش مصنوعی ساخته یا عوض کرده برچسب <strong>«با تصمیم Claude»</strong> دارن.</li><li><strong>قبل از هر تغییری می‌پرسه</strong>، و آدم‌ها خودکار خبردار می‌شن.</li></ul>
     </div>
     <div class="claude-use">
-      <div class="prompts"><h3>نمونه جمله‌ها</h3><p class="prompt">یه بررسی هفتگی از تیمم بکن</p><p class="prompt">برای لانچ بعدی یه پروژه طراحی کن</p><p class="prompt">کار رو بین بچه‌ها متعادل کن</p></div>
+      <div class="prompts"><h3>نمونه جمله‌ها</h3><p class="prompt">یه بررسی هفتگی از تیمم بکن</p><p class="prompt">برای لانچ بعدی یه پروژه طراحی کن</p><p class="prompt">کار رو بین بچه‌ها متعادل کن</p><p class="prompt">امروز چی دارم؟</p></div>
       <div class="install"><h3>نصب با یه خط</h3>
-        <div class="seg" role="tablist" aria-label="نصب با یه خط"><button type="button" role="tab" aria-selected="true" data-cmd="irm https://raw.githubusercontent.com/iamTheSilent/laneh-releases/main/ai/install.ps1 | iex">ویندوز</button><button type="button" role="tab" aria-selected="false" data-cmd="curl -fsSL https://raw.githubusercontent.com/iamTheSilent/laneh-releases/main/ai/install.sh | sh" tabindex="-1">مک/لینوکس</button></div>
-        <div class="cmd"><code dir="ltr">irm https://raw.githubusercontent.com/iamTheSilent/laneh-releases/main/ai/install.ps1 | iex</code><button type="button" class="btn btn--quiet copy"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>کپی</span></button></div>
+        <div class="seg" role="tablist" aria-label="نصب با یه خط"><span class="seg-thumb" aria-hidden="true"></span><button type="button" role="tab" aria-selected="true" data-cmd="irm https://raw.githubusercontent.com/iamTheSilent/laneh-releases/main/ai/install.ps1 | iex">ویندوز</button><button type="button" role="tab" aria-selected="false" data-cmd="curl -fsSL https://raw.githubusercontent.com/iamTheSilent/laneh-releases/main/ai/install.sh | sh" tabindex="-1">مک/لینوکس</button></div>
+        <div class="cmd"><code dir="ltr">irm https://raw.githubusercontent.com/iamTheSilent/laneh-releases/main/ai/install.ps1 | iex</code><button type="button" class="btn btn--quiet copy" aria-label="کپی"><span class="copy-ic copy-ic--copy"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></span><span class="copy-ic copy-ic--check"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span><span class="copy-lbl">کپی</span></button></div>
         <a class="guide" href="https://github.com/iamTheSilent/laneh-releases/blob/main/ai/README.md" target="_blank" rel="noopener">راهنما</a>
       </div>
     </div>
-    <div class="claude-shots"><figure><img class="shot shot--desk " src="assets/shots/05-claude-path.png" srcset="assets/shots/05-claude-path-720.webp 720w, assets/shots/05-claude-path-1000.webp 1000w, assets/shots/05-claude-path.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="Claude، مدیر پروژهٔ تیمت" width="1424" height="861" loading="lazy"></figure><figure><img class="shot shot--desk " src="assets/shots/09-connect-claude.png" srcset="assets/shots/09-connect-claude-720.webp 720w, assets/shots/09-connect-claude-1000.webp 1000w, assets/shots/09-connect-claude.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="Claude، مدیر پروژهٔ تیمت" width="1424" height="861" loading="lazy"></figure></div>
+    <div class="claude-shots"><figure><img class="shot shot--desk " src="assets/shots/05-claude-path.png" srcset="assets/shots/05-claude-path-720.webp 720w, assets/shots/05-claude-path-1000.webp 1000w, assets/shots/05-claude-path.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="هوش مصنوعی، مدیر پروژهٔ تیمت" width="1424" height="861" loading="lazy"></figure><figure><img class="shot shot--desk " src="assets/shots/09-connect-claude.png" srcset="assets/shots/09-connect-claude-720.webp 720w, assets/shots/09-connect-claude-1000.webp 1000w, assets/shots/09-connect-claude.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="هوش مصنوعی، مدیر پروژهٔ تیمت" width="1424" height="861" loading="lazy"></figure></div>
   </div>
 </section>
 
-<section class="screens" aria-label="پروژه‌ها، صفحهٔ هر نفر، تقویم کاری، پروژه‌ها، ایده‌ها">
-  <ul class="rail" tabindex="0" aria-label="پروژه‌ها، صفحهٔ هر نفر، تقویم کاری، پروژه‌ها، ایده‌ها"><li class=""><figure><img class="shot shot--desk " src="assets/shots/06-projects.png" srcset="assets/shots/06-projects-720.webp 720w, assets/shots/06-projects-1000.webp 1000w, assets/shots/06-projects.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="پروژه‌ها" width="1424" height="861" loading="lazy"><figcaption>پروژه‌ها</figcaption></figure></li><li class="is-phone"><figure><img class="shot shot--phone " src="assets/shots/phone-03-person.png" srcset="assets/shots/phone-03-person-260.webp 260w, assets/shots/phone-03-person.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="صفحهٔ هر نفر" width="384" height="821" loading="lazy"><figcaption>صفحهٔ هر نفر</figcaption></figure></li><li class=""><figure><img class="shot shot--desk " src="assets/shots/07-calendar.png" srcset="assets/shots/07-calendar-720.webp 720w, assets/shots/07-calendar-1000.webp 1000w, assets/shots/07-calendar.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="تقویم کاری" width="1424" height="861" loading="lazy"><figcaption>تقویم کاری</figcaption></figure></li><li class="is-phone"><figure><img class="shot shot--phone " src="assets/shots/phone-04-projects.png" srcset="assets/shots/phone-04-projects-260.webp 260w, assets/shots/phone-04-projects.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="پروژه‌ها" width="384" height="821" loading="lazy"><figcaption>پروژه‌ها</figcaption></figure></li><li class=""><figure><img class="shot shot--desk " src="assets/shots/08-ideas.png" srcset="assets/shots/08-ideas-720.webp 720w, assets/shots/08-ideas-1000.webp 1000w, assets/shots/08-ideas.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="ایده‌ها" width="1424" height="861" loading="lazy"><figcaption>ایده‌ها</figcaption></figure></li></ul>
+<section class="desktop" id="desktop" aria-labelledby="desk-h">
+  <div class="container desk-grid">
+    <div><h2 id="desk-h">لانه روی ویندوز</h2><p class="sec-sub">تمام‌صفحه، میانبرها با کیبورد فارسی، آپدیت از داخل اپ.</p>
+      <ul class="tp-points"><li><strong>تمام‌صفحه</strong> باز می‌شه.</li><li><strong>آپدیت از داخل اپ</strong>: نسخهٔ تازه که بیاد خبر می‌ده و <strong>با یه کلیک</strong> نصب می‌شه.</li><li><strong>پنج اندازهٔ فونت</strong> و انتخاب فونت.</li></ul></div>
+    <div class="keys"><h3>میانبرهای صفحه‌کلید</h3>
+      <dl><div class="key-row"><dt dir="ltr"><kbd>Ctrl</kbd><span aria-hidden="true">+</span><kbd>N</kbd></dt><dd>کار تازه</dd></div><div class="key-row"><dt dir="ltr"><kbd>Alt</kbd><span aria-hidden="true">+</span><kbd>1–5</kbd></dt><dd>صفحه‌ها</dd></div><div class="key-row"><dt dir="ltr"><kbd>Ctrl</kbd><span aria-hidden="true">+</span><kbd>/</kbd></dt><dd>فهرست</dd></div></dl>
+      <p class="note">با کیبورد فارسی هم کار می‌کنن.</p></div>
+  </div>
+</section>
+
+<section class="screens" aria-label="پروژه‌ها، صفحهٔ هر نفر، پروژه‌ها، ایده‌ها">
+  <ul class="rail" tabindex="0" aria-label="پروژه‌ها، صفحهٔ هر نفر، پروژه‌ها، ایده‌ها"><li class=""><figure><img class="shot shot--desk " src="assets/shots/06-projects.png" srcset="assets/shots/06-projects-720.webp 720w, assets/shots/06-projects-1000.webp 1000w, assets/shots/06-projects.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="پروژه‌ها" width="1424" height="861" loading="lazy"><figcaption>پروژه‌ها</figcaption></figure></li><li class="is-phone"><figure><img class="shot shot--phone " src="assets/shots/phone-03-person.png" srcset="assets/shots/phone-03-person-260.webp 260w, assets/shots/phone-03-person.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="صفحهٔ هر نفر" width="384" height="821" loading="lazy"><figcaption>صفحهٔ هر نفر</figcaption></figure></li><li class="is-phone"><figure><img class="shot shot--phone " src="assets/shots/phone-04-projects.png" srcset="assets/shots/phone-04-projects-260.webp 260w, assets/shots/phone-04-projects.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="پروژه‌ها" width="384" height="821" loading="lazy"><figcaption>پروژه‌ها</figcaption></figure></li><li class=""><figure><img class="shot shot--desk " src="assets/shots/08-ideas.png" srcset="assets/shots/08-ideas-720.webp 720w, assets/shots/08-ideas-1000.webp 1000w, assets/shots/08-ideas.png 1424w" sizes="(max-width: 60rem) 92vw, 760px" alt="ایده‌ها" width="1424" height="861" loading="lazy"><figcaption>ایده‌ها</figcaption></figure></li></ul>
 </section>
 
 <section class="download" id="download" aria-labelledby="dl-h">
   <div class="container dl-grid">
     <div class="dl-text">
-      <h2 id="dl-h">دانلود</h2>
-      <div class="platforms"><div class="platform"><h3>ویندوز</h3>
-        <ul><li><a class="btn btn--quiet btn--lead" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>نصب‌کنندهٔ فارسی</span></a> <span class="tag">پیشنهادی</span></li><li><a class="btn btn--quiet" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>نسخهٔ zip بدون نصب</span></a></li></ul>
-        <p class="note">ویندوز ممکنه هشدار «ناشر ناشناس» بده. <strong>More info</strong> و بعد <strong>Run anyway</strong> رو بزن.</p></div><div class="platform"><h3>اندروید</h3>
-        <ul><li><a class="btn btn--quiet btn--lead" href="https://cafebazaar.ir/app/app.laneh" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>کافه‌بازار</span></a></li><li><a class="btn btn--quiet" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>APK</span></a></li></ul>
-        </div><div class="platform"><h3>وب</h3>
-        <ul><li><a class="btn btn--quiet btn--lead" href="https://37-32-38-170.sslip.io/app/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>وب (بدون نصب، توی مرورگر)</span></a></li></ul>
-        </div></div>
-      <p class="latest"><a href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener">لینک همیشه‌به‌روز</a> <code dir="ltr">github.com/iamTheSilent/laneh-releases/releases/latest</code></p>
+      <h2 id="dl-h">لانه رو بردار</h2><p class="sec-sub">روی ویندوز، اندروید یا مستقیم توی مرورگر.</p>
+      <div class="platforms"><article class="platform">
+        <header class="pf-head"><span class="pf-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h3>وب</h3></header>
+        <ul><li><a class="btn btn--block btn--primary" href="https://37-32-38-170.sslip.io/app/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>باز کردن در مرورگر</span><span class="tag">بدون نصب</span></a></li></ul>
+        </article><article class="platform">
+        <header class="pf-head"><span class="pf-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5l7.5-1v7H3zM12 4.3l9-1.3v8.5h-9zM3 12.5h7.5v7l-7.5-1zM12 12.5h9V21l-9-1.3z" fill="currentColor" stroke="none"/></svg></span><h3>ویندوز</h3></header>
+        <ul><li><a class="btn btn--block btn--primary" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>نصب‌کنندهٔ فارسی</span><span class="tag">پیشنهادی</span></a></li><li><a class="btn btn--block btn--quiet" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>نسخهٔ zip بدون نصب</span></a></li></ul>
+        <p class="note">ویندوز ممکنه هشدار «ناشر ناشناس» بده. <strong>More info</strong> و بعد <strong>Run anyway</strong> رو بزن.</p></article><article class="platform">
+        <header class="pf-head"><span class="pf-ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 10v7a1 1 0 0 0 1 1h1v3M18 10v7a1 1 0 0 1-1 1h-1v3M6 10a6 6 0 0 1 12 0zM3 11v5M21 11v5M8 4l1.5 2M16 4l-1.5 2"/></svg></span><h3>اندروید</h3></header>
+        <ul><li><a class="btn btn--block btn--primary" href="https://cafebazaar.ir/app/app.laneh" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span>کافه‌بازار</span></a></li><li><a class="btn btn--block btn--quiet" href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>APK</span></a></li></ul>
+        </article></div>
+      <p class="latest"><a href="https://github.com/iamTheSilent/laneh-releases/releases/latest" target="_blank" rel="noopener">همهٔ دانلودها، همیشه آخرین نسخه</a> <code dir="ltr">github.com/iamTheSilent/laneh-releases/releases/latest</code></p>
     </div>
-    <figure class="dl-shot"><img class="shot shot--phone " src="assets/shots/phone-04-projects.png" srcset="assets/shots/phone-04-projects-260.webp 260w, assets/shots/phone-04-projects.png 384w" sizes="(max-width: 60rem) 60vw, 280px" alt="دانلود" width="384" height="821" loading="lazy"></figure>
   </div>
 </section></main>
 <footer class="colophon"><div class="container">
+  <p class="colophon-line">ایده‌ها توی لانه جوجه می‌کنن.</p>
   <p><b>لانه</b> <a href="changelog.html">تازه‌ها</a> <a href="https://github.com/iamTheSilent/laneh-releases/blob/main/privacy.md" target="_blank" rel="noopener">سیاست حریم خصوصی</a> <a href="mailto:usingthisforbot@gmail.com">usingthisforbot@gmail.com</a> <span class="num">© 2026</span></p>
 </div></footer>
-<script src="assets/app.js" defer></script>
+<script src="assets/app.js?v=mwcm1vi0" defer></script>
 </body></html>
