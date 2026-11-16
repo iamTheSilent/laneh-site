@@ -6,6 +6,7 @@
 /* Hallmark · waive 44c · .hero has min-height calc(100svh - bar); the 1440x900 render shows the mark and the text filling the screen · the measure stops at the text column, the mark carries the rest */
 /* Hallmark · waive 79 · same evidence as 44c: the 484px is beside the text column, occupied by the mark and embers · the empty band is the mark and embers beside the text, centring it would push the logo off the first screen */
 /* Hallmark · waive 77 · changelog.html: «نسخهٔ ۱.۲.۱» is a three-fix release · the owner’s release notes are verbatim, never padded */
+/* Hallmark · dropped https://37-32-38-170.sslip.io/app/ · release 1.2.5 moved the web app to https://app.laneh.space, which every web button now opens */
 /* Hallmark · dropped https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js, https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js, https://unpkg.com/lenis@1.1.13/dist/lenis.min.js, brand-loader, main-nav, nav-backdrop, nav-drawer, nav-toggle, top · the new page needs no scroll library and the slab bar has no drawer (the links repeat in the footer and the sections) */
 @import url("./tokens.css");
 @import url("./base.css");
